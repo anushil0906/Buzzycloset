@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<body class="our">
+
+ 
+
+  <div class="pageWrapper">
+
+  
+
+  
+    <!--Body Content-->
+    <div id="page-content">
+      <!-- Lookbook Start -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="empty-page-content text-center">
+              <h1>Your Order has been Placed Successfully</h1>
+              <p>Track Your Order.</p>
+              <p><a href="{% url 'profile' %}" class="btn btn--has-icon-after">Track <i class="fa fa-caret-right"
+                    aria-hidden="true"></i></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Lookbook Start -->
+    </div>
+    <!--End Body Content-->
+
+
+
+
+  
+  <!--Scoll Top-->
+  <span id="site-scroll"><i class="icon anm anm-angle-up-r"></i></span>
+  <!--End Scoll Top-->
+
+
+
+ 
+ {% endblock %}

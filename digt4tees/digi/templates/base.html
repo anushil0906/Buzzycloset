@@ -1,0 +1,628 @@
+{% load static %}
+ {% load fpc_tags %} 
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    
+
+<!--   Tshirt Printing  -->
+
+<head>
+    {% fpc %}
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Buzzy Closet</title>
+    <meta name="description" content="description">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+    <link rel="shortcut icon" href="/static/img/Red.svg" />
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="/static/assets/css/plugins.css">
+  <!-- Bootstap CSS -->
+  <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+  <!-- Main Style CSS -->
+  <link rel="stylesheet" href="/static/assets/css/responsive.css">
+  <link rel="stylesheet" href="/static/assets/css/style.css">
+  <link rel="stylesheet" href="/static/assets/css/style1.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CXYRC8L3NJ"></script>
+   <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-CXYRC8L3NJ');
+  </script>
+
+
+
+</head>
+<style>
+#site-scroll {
+    color: #fff;
+    line-height: 38px;
+    cursor: pointer;
+    font-size: 20px;
+    height: 40px;
+    right: 30px;
+    position: fixed;
+    border-radius: 3px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    width: 40px;
+    bottom: 90px;
+    z-index: 444;
+    display: none;
+    background: #000;
+}
+@media only screen and (max-width: 767px)
+#site-scroll {
+    font-size: 18px;
+    line-height: 30px;
+    height: 30px;
+    width: 30px;
+    right: 15px;
+    bottom: 80px;
+}
+.whatsapp-button{
+    display:none;
+
+}
+@media only screen and (max-width: 767px){
+.whatsapp-button{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  background-color: #25d366;
+  border-radius: 50px;
+  color: #ffffff;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+  box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+  animation: effect 5s infinite ease-in;
+}
+
+@keyframes effect {
+  20%, 100% {
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+  }
+  0%, 10%{
+      width: 55px;
+      height: 55px;
+      font-size: 35px;
+  }
+  5%{
+      width: 50px;
+      height: 50px;
+      font-size: 30px;
+  }
+}
+}
+</style>
+<body class="our">
+  <div id="pre-loader">
+    <img src="/static/assets/images/loader.gif" alt="Loading..." />
+  </div>
+  <div class="pageWrapper">
+    <!--Search Form Drawer-->
+    
+    <!--End Search Form Drawer-->
+
+      <!--Top Header-->
+      <div class="top-header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-10 col-sm-8 col-md-5 col-lg-4">
+              
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 d-none d-lg-none d-md-block
+              d-lg-block">
+              <div class="text-center">
+                <p class="top-header_middle-text">𝚆ear Your Buzz</p>
+              </div>
+            </div>
+            <div class="col-2 col-sm-4 col-md-3 col-lg-4 text-right">
+              <span class="user-menu d-block d-lg-none"><i class="anm
+                  anm-user-al" aria-hidden="true"></i></span>
+              <ul class="customer-links list-inline">
+                 {% if user.is_authenticated %}
+
+                 <li><a href="{% url 'profile' %}">My Profile</a></li>
+                <li><a href="{% url 'logouts' %}">Logout</a></li>
+
+                 {% else %}
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'register' %}">Create Account</a></li>
+                {% endif %}
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End Top Header-->
+
+
+
+      <!--Header-->
+      <div class="header-wrap animated d-flex border-bottom">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+
+            <!--Desktop Logo-->
+            <div class="logo col-md-2 col-lg-2 d-none d-lg-block">
+              <a href="{% url 'home' %}">
+                <img src="/static/tshirt/logo.jpeg" alt="tshirt" title="tshirt"
+                  height="50" />
+              </a>
+            </div>
+            <!--End Desktop Logo-->
+
+            <div class="col-2 col-sm-3 col-md-3 col-lg-8 ">
+            <div class="d-block d-lg-none">
+                        <button type="button" class="btn--link site-header__menu js-mobile-nav-toggle mobile-nav--open">
+                        	<i class="icon anm anm-times-l"></i>
+                            <i class="anm anm-bars-r"></i>
+                        </button>
+                    </div>
+             
+              <center>
+                <p class="quote">🅱🆄🆉🆉🆈 🅲🅻🅾🆂🅴🆃</p>
+              </center>
+              
+             
+            </div>
+
+
+            <!--Mobile Logo-->
+            <div class="col-8 col-sm-8 col-md-8 col-lg-2 d-block d-lg-none
+              mobile-logo align-items-center">
+              <div class="logo">
+                <a href="{% url 'home' %}">
+                  <img src="/static/tshirt/logo.jpeg" alt="tshirt print" title="tshirt
+                    print" height="50" />
+                </a>
+              </div>
+            </div>
+            <!--Mobile Logo-->
+    
+
+    
+ <script type="text/javascript">
+
+function QUa1(vul,color,size){
+  
+  $.ajax({
+    url: "{% url 'item_increment' slug=12345 %}".replace(/12345/, vul.toString()),
+    type: 'GET',
+    data: { 
+    colorT:color,
+    sizeT:size
+  },
+    success: function (data) {
+      var div = document.getElementById(vul.concat(color,size));
+      var divtotal = document.getElementById('total-vill');
+      console.log(div.innerHTML);
+       console.log(color);
+       console.log(size);
+      document.getElementById(vul.concat(color,size)).innerHTML = "";
+      document.getElementById('total-vill').innerHTML = "";
+      div.innerHTML = div.innerHTML + data.Q;  
+      divtotal.innerHTML = divtotal.innerHTML + 'Rs.'+ data.total_bill;     
+
+    }
+  });
+}
+function QUa2(vul,color,size,x){
+
+   if (document.getElementById(vul.concat(color,size)).innerHTML == 1)
+       {
+         QUa3(vul,x,color,size);
+
+       }
+
+else {
+  $.ajax({
+    url: "{% url 'item_decrement' slug=12345 %}".replace(/12345/, vul.toString()),
+    type: 'GET',
+    data: { 
+    colorT:color,
+    sizeT:size
+  },
+    success: function (data) {
+      var div = document.getElementById(vul.concat(color,size));
+      var divtotal = document.getElementById('total-vill');
+      console.log(div.innerHTML);
+       console.log(color);
+       console.log(size);
+      
+       
+      document.getElementById(vul.concat(color,size)).innerHTML = "";
+      document.getElementById('total-vill').innerHTML = "";
+      div.innerHTML = div.innerHTML + data.Q;
+      divtotal.innerHTML = divtotal.innerHTML + 'Rs.'+ data.total_bill;
+    
+     
+
+    }
+  });
+}
+}
+
+function QUa3(vul,x,color,size)
+{
+
+  $.ajax({
+    url: "{% url 'item_clear' slug=12345 %}".replace(/12345/, vul.toString()),
+    type: 'GET',
+    data: { 
+    colorT:color,
+    sizeT:size
+  },
+    success: function (data) {
+       var divtotal = document.getElementById('total-vill');    
+      document.getElementById(x.toString()).innerHTML = "";
+      document.getElementById('total-vill').innerHTML = "";
+      divtotal.innerHTML = divtotal.innerHTML + 'Rs.'+ data.total_bill;
+
+
+    }
+  });
+}
+</script>
+<script type="text/javascript">
+  
+  window.addEventListener( "pageshow", function ( event ) {
+  var historyTraversal = event.persisted || ( typeof window.performance != "undefined" && window.performance.navigation.type === 2 );
+  if ( historyTraversal ) {
+    // Handle page restore.
+    //alert('refresh');
+    window.location.reload();
+  }
+});
+
+</script>
+
+<div class="col-2 col-sm-1 col-md-1 col-lg-2">
+              <div class="site-cart">
+                <a href="#;" class="site-header__cart" title="Cart">
+                  <i class="icon anm anm-bag-l"></i>
+                  <span id="CartCount" class="site-header__cart-count"
+                    data-cart-render="item_count">{{ request.session.cart|length }}</span>
+                </a>
+                <!--Minicart Popup-->
+
+
+              <div id="header-cart" class="block block-cart">
+                <ul class="mini-products-list">
+                   {% for key,value in request.session.cart.items %}
+
+                        
+             
+                   <li id="{{value.product_id}}"class="item">
+                    <a class="product-image" href="#">
+                      {% if value.image != "featuredproduct" %}
+                      <img src="{{ value.image }}" alt="3/4 Sleeve Kimono Dress" title="" />
+                      {% else %}
+                       <img src="{{ value.photo }}" alt="3/4 Sleeve Kimono Dress" title="" />
+                      {% endif %}
+
+
+                     
+                    </a>
+                    <div class="product-details">
+                      <a onClick="QUa3('{{value.slug}}','{{value.product_id}}','{{ value.colorT }}','{{ value.sizeT }}')" class="remove"><i class="icon-trash icon-large" aria-hidden="true"></i></a>
+                      
+                      <a class="pName" href="cart.html">{{ value.name }}</a>
+                      <div class="variant-cart">{{ value.colorT }} / {{ value.sizeT }}</div>
+                      <div class="wrapQtyBtn">
+                        <div class="qtyField">
+                          
+                           <button   onClick="QUa2('{{value.slug}}','{{ value.colorT }}','{{ value.sizeT }}','{{value.product_id}}')"type="button"  class="minus">-</button>                  
+                           <p1 id= "{{value.slug}}{{value.colorT}}{{value.sizeT}}" >{{ value.quantity }}</p1> 
+                          <button  onClick="QUa1('{{value.slug}}','{{ value.colorT }}','{{ value.sizeT }}')"type="button"  class="plus">+</button>
+                      
+                          
+                        </div>
+                      </div>
+                      <div class="priceRow">
+                        <div class="product-price">
+                          <span class="money">RS.{{value.price}}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  {% endfor %}
+                 
+                </ul>
+                <div class="total">
+                  <div class="total-in">
+                   
+                    <span class="label">Cart Subtotal:</span><span class="product-price"><span
+                        class="money"><p id="total-vill">RS.{{ total_bill }} </p></span></span>
+                  </div>
+                  <div class="buttonSet text-center">
+                       {% if request.session.cart|length > 0 %}
+                    <a href="{% url 'checkout' %}" class="btn btn-secondary
+                        btn--small">Checkout</a>
+                         {% else %}
+                    <a  onclick="myFunction()" class="btn btn-secondary
+                        btn--small">Checkout</a>
+                                        
+                      {% endif %}
+                  </div>
+                </div>
+              </div>
+              <!--End Minicart Popup-->
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Header-->
+    
+    
+    
+    
+    
+ <!--Mobile Menu-->
+ <div class="mobile-nav-wrapper" role="navigation">
+  <div class="closemobileMenu"><i class="icon anm anm-times-l pull-right"></i> Close Menu</div>
+   <ul id="MobileNav" class="mobile-nav">
+        <li class="lvl1 parent megamenu"><a href="https://buzzycloset.com/">Home </a>
+        </li>
+      <ul id="MobileNav" class="mobile-nav">
+        <li class="lvl1 parent megamenu"><a href="https://buzzycloset.com/1">Anime <i class="anm anm-plus-l"></i></a>
+        <ul>
+          <li><a href="https://buzzycloset.com/subcategory/demon-slayer" class="site-nav">Demon's Layer</a>
+           
+          </li>
+          <li><a href="https://buzzycloset.com/subcategory/dragon-balls" class="site-nav">Dragon balls</a>
+            
+          </li>
+          <li><a href="https://buzzycloset.com/subcategory/Naruto" class="site-nav">Naruto</a>
+            
+          </li>
+          <li><a href="https://buzzycloset.com/subcategory/attack-on-titan" class="site-nav">Attack On Titan</a>
+            
+          </li><li><a href="https://buzzycloset.com/subcategory/One-piece" class="site-nav">One Piece</a>
+            
+          </li>
+          <li><a href="https://buzzycloset.com/subcategory/jujutsu-kaisen" class="site-nav">Jujustu kaisen</a>
+            
+          </li> 
+        </ul>
+      </li>
+        <li class="lvl1 parent megamenu"><a href="https://buzzycloset.com/2"> Marvel <i class="anm anm-plus-l"></i></a>
+        <ul>
+          <li><a href="https://buzzycloset.com/subcategory/ironman" class="site-nav">Iron Man</a>
+           
+          </li>
+          <li><a href="https://buzzycloset.com/subcategory/thor" class="site-nav">Thor</a>
+            
+          </li>
+          <li><a href="https://buzzycloset.com/subcategory/deadpool" class="site-nav">Deadpool</a>
+            
+          </li>
+        </ul>
+      </li>
+        <li class="lvl1 parent megamenu"><a href="https://buzzycloset.com/3">Friends <i class="anm anm-plus-l"></i></a>
+        <ul>
+          <li><a href="https://buzzycloset.com/subcategory/friends" class="site-nav">Friends</a>
+            
+          </li>
+        </ul>
+      </li>
+        <li class="lvl1 parent megamenu"><a href="https://buzzycloset.com/7">Daily Dose<i class="anm anm-plus-l"></i></a>
+         <ul><li><a href="https://buzzycloset.com/subcategory/astronaut" class="site-nav">Astronaut</a>
+           
+          </li>
+          <li><a href="https://buzzycloset.com/subcategory/chai-lover" class="site-nav">Chai Lover</a>
+            
+          </li>
+          <li><a href="https://buzzycloset.com/subcategory/swag-shop" class="site-nav">Swag Shop</a>
+            
+          </li></ul> 
+      </li>  <li class="lvl1 parent megamenu"></a>
+        
+     </li>
+       
+       
+      </li>
+    </ul>
+</div>
+<!--End Mobile Menu-->
+    
+  {% block content %}
+
+
+  {% endblock %}
+
+            <!--Footer-->
+            <footer id="footer" class="footer-2">
+           <!--   <div class="newsletter-section">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-7 w-100 d-flex
+                      justify-content-start align-items-center">
+                      <div class="display-table">
+                        <div class="display-table-cell footer-newsletter">
+                          <div class="section-header text-center">
+                            <label class="h2"><span>sign up for </span>newsletter</label>
+                          </div>
+                          <form action="#" method="post">
+                            <div class="input-group">
+                              <input type="email" class="input-group__field
+                                newsletter__input" name="EMAIL" value=""
+                                placeholder="Email address" required="">
+                              <span class="input-group__btn">
+                                <button type="submit" class="btn
+                                  newsletter__submit" name="commit"
+                                  id="Subscribe"><span
+                                    class="newsletter__submit-text--large">Subscribe</span></button>
+                              </span>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 d-flex
+                      justify-content-end align-items-center">
+                      <div class="footer-social">
+                        <ul class="list--inline site-footer__social-icons
+                          social-icons">
+                          <li><a class="social-icons__link" href="#"
+                              target="_blank"><i class="icon
+                                icon-facebook"></i></a></li>
+                          
+                          <li><a class="social-icons__link" href="https://www.instagram.com/buzzycloset/"
+                              target="_blank"><i class="icon
+                                icon-instagram"></i> <span
+                                class="icon__fallback-text">Instagram</span></a></li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <div class="site-footer" style="background-color: black;">
+                <div class="container">
+                  <!--Footer Links-->
+                  <div class="footer-top">
+                    <div class="row">
+                      <div class="col-12 col-sm-12 col-md-3 col-lg-3
+                        footer-links">
+                        <h4 class="h4">Tshirt</h4>
+                        <p><b>Fabric</b></p>
+                        <p>100% Cotton</p>
+                        <p><b>Standards</b></p>
+                        <p>• Don’t Bleach & Wring</p> 
+                        <p>• Dry in Shade</p>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-3 col-lg-3
+                        footer-links">
+                        <h4 class="h4">Informations</h4>
+                        <ul>
+                          <li><a href="{% url 'aboutus' %}">About us</a></li>
+                          <li><a href="{% url 'rp' %}">Return Policy</a></li>
+                          <li><a href="{% url 'pp' %}">Privacy policy</a></li>
+                          <li><a href="{% url 'tc' %}">Terms &amp; condition</a></li>
+                          <li><a href="{% url 'profile' %}">My Account</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-3 col-lg-3
+                        footer-links">
+                        <h4 class="h4">Customer Services</h4>
+                        <ul>
+                          <li><a href="{% url 'pp' %}">Request Personal Data</a></li>
+                          <li><a href="{% url 'shipping' %}">Shipping and Delivery Timeline</a></li>
+                          
+                        </ul>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-3 col-lg-3
+                        contact-box">
+                        <h4 class="h4">Contact Us</h4>
+                        <ul class="addressFooter">
+                          <li><i class="icon anm anm-map-marker-al"></i><p><br>Ujjain MP</p>
+                          </li>
+                          <li class="phone"><i class="icon anm anm-phone-s"></i>
+                            <p>(+91) 7898276373</p>
+                          </li>
+                          <li class="email"><i class="icon anm anm-envelope-l"></i>
+                            <p>buzzycloset@gmail.com</p>
+                          </li>
+                        </ul> <ul class="list--inline site-footer__social-icons
+                          social-icons">
+                          <li><a class="social-icons__link" href="#"
+                              target="_blank"><i class="icon
+                                icon-facebook"style="color: white;"></i></a></li>
+                          
+                          <li><a class="social-icons__link" href="https://www.instagram.com/buzzycloset/"
+                              target="_blank"><i class="icon
+                                icon-instagram"style="color: white;"></i> <span
+                                class="icon__fallback-text">Instagram</span></a></li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!--End Footer Links-->
+                  <hr>
+                  <div class="footer-bottom">
+                    <div class="row">
+                      <!--Footer Copyright-->
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 order-1
+                        order-md-0 order-lg-0 order-sm-1 copyright
+                        text-sm-center
+                        text-md-left text-lg-left"><span></span> <a></a></div>
+                      <!--End Footer Copyright-->
+                      <!--Footer Payment Icon-->
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 order-0
+                        order-md-1 order-lg-1 order-sm-0 payment-icons
+                        text-right
+                        text-md-center">
+                        <img src="/static/tshirt/cards.jpg" alt="Payment">
+                      </div>
+                      <!--End Footer Payment Icon-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+
+
+
+
+            <!--Scoll Top-->
+            <span id="site-scroll"><i class="icon anm anm-angle-up-r"></i></span>
+            <!--End Scoll Top-->
+            
+               <a style="text-decoration: none;" target="_blank" href="https://api.whatsapp.com/send?phone=+917898276373&text=" class="whatsapp-button"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+
+   function myFunction() { 
+    alert(" add something to cart first ")
+}
+       
+
+</script>
+
+            <!-- Including Jquery -->
+            <script src="/static/assets/js/vendor/jquery-3.3.1.min.js"></script>
+            <script src="/static/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+            <script src="/static/assets/js/vendor/jquery.cookie.js"></script>
+            <script src="/static/assets/js/vendor/wow.min.js"></script>
+            <!-- Including Javascript -->
+            <script src="/static/assets/js/bootstrap.min.js"></script>
+            <script src="/static/assets/js/plugins.js"></script>
+            <script src="/static/assets/js/popper.min.js"></script>
+            <script src="/static/assets/js/lazysizes.js"></script>
+            <script src="/static/assets/js/main.js"></script>
+
+          </div>
+        </body>
+
+        <!-- Tshirt Printing-->
+
+      </html>
+    
+
+

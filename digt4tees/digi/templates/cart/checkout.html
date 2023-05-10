@@ -1,0 +1,1688 @@
+{% load cart_tag %}
+{% load fpc_tags %} 
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<!--   Tshirt Printing  -->
+
+
+<!--{{ user }} -->
+
+<head>
+     {% fpc %} 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Buzzy CLoset</title>
+  <meta name="description" content="description">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/static/tshirt/favicon.png" />
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="/static/assets/css/plugins.css">
+  <!-- Bootstap CSS -->
+  <link rel="stylesheet" href="/static/assets/css/bootstrap.min.css">
+  <!-- Main Style CSS -->
+  <link rel="stylesheet" href="/static/assets/css/style.css">
+  <link rel="stylesheet" href="/static/assets/css/responsive.css">
+  <link rel="stylesheet" href="/static/assets/css/style1.css">
+</head>
+<script>var state_arr = new Array("Andaman & Nicobar", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chandigarh", "Chhattisgarh", "Dadra & Nagar Haveli", "Daman & Diu", "Delhi", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu & Kashmir", "Jharkhand", "Karnataka", "Kerala", "Lakshadweep", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Orissa", "Pondicherry", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Tripura", "Uttar Pradesh", "Uttaranchal", "West Bengal","Telangana");
+
+  var s_a = new Array();
+  s_a[0]="";
+  s_a[1]=" Alipur | Andaman Island | Anderson Island | Arainj-Laka-Punga | Austinabad | Bamboo Flat | Barren Island | Beadonabad | Betapur | Bindraban | Bonington | Brookesabad | Cadell Point | Calicut | Chetamale | Cinque Islands | Defence Island | Digilpur | Dolyganj | Flat Island | Geinyale | Great Coco Island | Haddo | Havelock Island | Henry Lawrence Island | Herbertabad | Hobdaypur | Ilichar | Ingoie | Inteview Island | Jangli Ghat | Jhon Lawrence Island | Karen | Kartara | KYD Islannd | Landfall Island | Little Andmand | Little Coco Island | Long Island | Maimyo | Malappuram | Manglutan | Manpur | Mitha Khari | Neill Island | Nicobar Island | North Brother Island | North Passage Island | North Sentinel Island | Nothen Reef Island | Outram Island | Pahlagaon | Palalankwe | Passage Island | Phaiapong | Phoenix Island | Port Blair | Preparis Island | Protheroepur | Rangachang | Rongat | Rutland Island | Sabari | Saddle Peak | Shadipur | Smith Island | Sound Island | South Sentinel Island | Spike Island | Tarmugli Island | Taylerabad | Titaije | Toibalawe | Tusonabad | West Island | Wimberleyganj | Yadita";
+  s_a[2]=" Achampet | Adoni | Alampur | Allagadda | Alur | Amalapuram | Amangallu | Anakapalle | Anantapur | Andole | Araku | Armoor | Asifabad | Aswaraopet | Atmakur | B. Kothakota | Badvel | Banaganapalle | Bandar | Bangarupalem | Banswada | Bapatla | Bellampalli | Bhadrachalam | Bhainsa | Bheemunipatnam | Bhimadole | Bhimavaram | Bhongir | Bhooragamphad | Boath | Bobbili | Bodhan | Chandoor | Chavitidibbalu | Chejerla | Chepurupalli | Cherial | Chevella | Chinnor | Chintalapudi | Chintapalle | Chirala | Chittoor | Chodavaram | Cuddapah | Cumbum | Darsi | Devarakonda | Dharmavaram | Dichpalli | Divi | Donakonda | Dronachalam | East Godavari | Eluru | Eturnagaram | Gadwal | Gajapathinagaram | Gajwel | Garladinne | Giddalur | Godavari | Gooty | Gudivada | Gudur | Guntur | Hindupur | Hunsabad | Huzurabad | Huzurnagar | Ibrahimpatnam | Jaggayyapet | Jammalamadugu | Jangaon | Jangareddygudem | Jannaram | Kadiri | Kaikaluru | Kakinada | Kalwakurthy | Kalyandurg | Kamalapuram | Kamareddy | Kambadur | Kanaganapalle | Kandukuru | Kanigiri | Kavali | Khanapur (AP) | Kodangal | Koduru | Koilkuntla | Kollapur | Kothagudem | Kovvur | Krishna | Krosuru | Kuppam | Kurnool | Lakkireddipalli | Madakasira | Madanapalli | Madhira | Madnur | Mahabubabad | Mahadevapur | Makthal | Mancherial | Mandapeta | Mangalagiri | Manthani | Markapur | Marturu | Medachal | Medak | Medarmetla | Metpalli | Mriyalguda | Mulug | Mylavaram | Nagarkurnool | Nallacheruvu | Nampalle | Nandigama | Nandikotkur | Nandyal | Narasampet | Narasaraopet | Narayanakhed | Narayanpet | Narsapur | Narsipatnam | Nazvidu | Nelloe | Nellore | Nidamanur | Nirmal | Nuguru | Ongole | Outsarangapalle | Paderu | Pakala | Palakonda | Paland | Palmaneru | Pamuru | Pargi | Parkal | Parvathipuram | Pathapatnam | Pattikonda | Peapalle | Peddapalli | Peddapuram | Penukonda | Piduguralla | Piler | Pithapuram | Podili | Polavaram | Prakasam | Proddatur | Pulivendla | Punganur | Putturu | Rajahmundri | Rajampeta | Ramachandrapuram | Ramannapet | Rampachodavaram | Rangareddy | Rapur | Rayachoti | Rayadurg | Razole | Repalle | Saluru | Sangareddy | Sathupalli | Sattenapalle | Satyavedu | Shadnagar | Siddavattam | Sileru | Sircilla | Sirpur Kagaznagar | Sodam | Sompeta | Srikakulam | Srikalahasthi | Srisailam | Srungavarapukota | Sudhimalla | Sullarpet | Tadepalligudem | Tadipatri | Tanduru | Tanuku | Tekkali | Tenali | Thungaturthy | Tirivuru | Tirupathi | Tuni | Udaygiri | Ulvapadu | Uravakonda | Utnor | V.R. Puram | Vaimpalli | Vayalpad | Venkatgiri | Venkatgirikota | Vijayawada | Vikrabad | Vinjamuru | Vinukonda | Visakhapatnam | Vizayanagaram | Vizianagaram | Vuyyuru | Wanaparthy | Wardhannapet | Yelamanchili | Yelavaram | Yeleswaram | Yellandu | Yellanuru | Yellareddy | Yerragondapalem | Zahirabad ";
+  s_a[3]=" Along | Anini | Anjaw | Bameng | Basar | Changlang | Chowkhem | Daporizo | Dibang Valley | Dirang | Hayuliang | Huri | Itanagar | Jairampur | Kalaktung | Kameng | Khonsa | Kolaring | Kurung Kumey | Lohit | Lower Dibang Valley | Lower Subansiri | Mariyang | Mechuka | Miao | Nefra | Pakkekesang | Pangin | Papum Pare | Passighat | Roing | Sagalee | Seppa | Siang | Tali | Taliha | Tawang | Tezu | Tirap | Tuting | Upper Siang | Upper Subansiri | Yiang Kiag ";
+  s_a[4]=" Abhayapuri | Baithalangshu | Barama | Barpeta Road | Bihupuria | Bijni | Bilasipara | Bokajan | Bokakhat | Boko | Bongaigaon | Cachar | Cachar Hills | Darrang | Dhakuakhana | Dhemaji | Dhubri | Dibrugarh | Digboi | Diphu | Goalpara | Gohpur | Golaghat | Guwahati | Hailakandi | Hajo | Halflong | Hojai | Howraghat | Jorhat | Kamrup | Karbi Anglong | Karimganj | Kokarajhar | Kokrajhar | Lakhimpur | Maibong | Majuli | Mangaldoi | Mariani | Marigaon | Moranhat | Morigaon | Nagaon | Nalbari | Rangapara | Sadiya | Sibsagar | Silchar | Sivasagar | Sonitpur | Tarabarihat | Tezpur | Tinsukia | Udalgiri | Udalguri | UdarbondhBarpeta";
+  s_a[5]=" Adhaura | Amarpur | Araria | Areraj | Arrah | Arwal | Aurangabad | Bagaha | Banka | Banmankhi | Barachakia | Barauni | Barh | Barosi | Begusarai | Benipatti | Benipur | Bettiah | Bhabhua | Bhagalpur | Bhojpur | Bidupur | Biharsharif | Bikram | Bikramganj | Birpur | Buxar | Chakai | Champaran | Chapara | Dalsinghsarai | Danapur | Darbhanga | Daudnagar | Dhaka | Dhamdaha | Dumraon | Ekma | Forbesganj | Gaya | Gogri | Gopalganj | H.Kharagpur | Hajipur | Hathua | Hilsa | Imamganj | Jahanabad | Jainagar | Jamshedpur | Jamui | Jehanabad | Jhajha | Jhanjharpur | Kahalgaon | Kaimur (Bhabua) | Katihar | Katoria | Khagaria | Kishanganj | Korha | Lakhisarai | Madhepura | Madhubani | Maharajganj | Mahua | Mairwa | Mallehpur | Masrakh | Mohania | Monghyr | Motihari | Motipur | Munger | Muzaffarpur | Nabinagar | Nalanda | Narkatiaganj | Naugachia | Nawada | Pakribarwan | Pakridayal | Patna | Phulparas | Piro | Pupri | Purena | Purnia | Rafiganj | Rajauli | Ramnagar | Raniganj | Raxaul | Rohtas | Rosera | S.Bakhtiarpur | Saharsa | Samastipur | Saran | Sasaram | Seikhpura | Sheikhpura | Sheohar | Sherghati | Sidhawalia | Singhwara | Sitamarhi | Siwan | Sonepur | Supaul | Thakurganj | Triveniganj | Udakishanganj | Vaishali | Wazirganj";
+  s_a[6]=" Chandigarh | Mani Marja";
+  s_a[7]=" Ambikapur | Antagarh | Arang | Bacheli | Bagbahera | Bagicha | Baikunthpur | Balod | Balodabazar | Balrampur | Barpalli | Basana | Bastanar | Bastar | Bderajpur | Bemetara | Berla | Bhairongarh | Bhanupratappur | Bharathpur | Bhatapara | Bhilai | Bhilaigarh | Bhopalpatnam | Bijapur | Bilaspur | Bodla | Bokaband | Chandipara | Chhinagarh | Chhuriakala | Chingmut | Chuikhadan | Dabhara | Dallirajhara | Dantewada | Deobhog | Dhamda | Dhamtari | Dharamjaigarh | Dongargarh | Durg | Durgakondal | Fingeshwar | Gariaband | Garpa | Gharghoda | Gogunda | Ilamidi | Jagdalpur | Janjgir | Janjgir-Champa | Jarwa | Jashpur | Jashpurnagar | Kabirdham-Kawardha | Kanker | Kasdol | Kathdol | Kathghora | Kawardha | Keskal | Khairgarh | Kondagaon | Konta | Korba | Korea | Kota | Koyelibeda | Kuakunda | Kunkuri | Kurud | Lohadigundah | Lormi | Luckwada | Mahasamund | Makodi | Manendragarh | Manpur | Marwahi | Mohla | Mungeli | Nagri | Narainpur | Narayanpur | Neora | Netanar | Odgi | Padamkot | Pakhanjur | Pali | Pandaria | Pandishankar | Parasgaon | Pasan | Patan | Pathalgaon | Pendra | Pratappur | Premnagar | Raigarh | Raipur | Rajnandgaon | Rajpur | Ramchandrapur | Saraipali | Saranggarh | Sarona | Semaria | Shakti | Sitapur | Sukma | Surajpur | Surguja | Tapkara | Toynar | Udaipur | Uproda | Wadrainagar";
+  s_a[8]=" Amal | Amli | Bedpa | Chikhli | Dadra & Nagar Haveli | Dahikhed | Dolara | Galonda | Kanadi | Karchond | Khadoli | Kharadpada | Kherabari | Kherdi | Kothar | Luari | Mashat | Rakholi | Rudana | Saili | Sili | Silvassa | Sindavni | Udva | Umbarkoi | Vansda | Vasona | Velugam ";
+  s_a[9]=" Brancavare | Dagasi | Daman | Diu | Magarvara | Nagwa | Pariali | Passo Covo ";
+  s_a[10]=" Central Delhi | East Delhi | New Delhi | North Delhi | North East Delhi | North West Delhi | South Delhi | South West Delhi | West Delhi ";
+  s_a[11]=" Canacona | Candolim | Chinchinim | Cortalim | Goa | Jua | Madgaon | Mahem | Mapuca | Marmagao | Panji | Ponda | Sanvordem | Terekhol ";
+  s_a[12]=" Ahmedabad | Ahwa | Amod | Amreli | Anand | Anjar | Ankaleshwar | Babra | Balasinor | Banaskantha | Bansada | Bardoli | Bareja | Baroda | Barwala | Bayad | Bhachav | Bhanvad | Bharuch | Bhavnagar | Bhiloda | Bhuj | Billimora | Borsad | Botad | Chanasma | Chhota Udaipur | Chotila | Dabhoi | Dahod | Damnagar | Dang | Danta | Dasada | Dediapada | Deesa | Dehgam | Deodar | Devgadhbaria | Dhandhuka | Dhanera | Dharampur | Dhari | Dholka | Dhoraji | Dhrangadhra | Dhrol | Dwarka | Fortsongadh | Gadhada | Gandhi Nagar | Gariadhar | Godhra | Gogodar | Gondal | Halol | Halvad | Harij | Himatnagar | Idar | Jambusar | Jamjodhpur | Jamkalyanpur | Jamnagar | Jasdan | Jetpur | Jhagadia | Jhalod | Jodia | Junagadh | Junagarh | Kalawad | Kalol | Kapad Wanj | Keshod | Khambat | Khambhalia | Khavda | Kheda | Khedbrahma | Kheralu | Kodinar | Kotdasanghani | Kunkawav | Kutch | Kutchmandvi | Kutiyana | Lakhpat | Lakhtar | Lalpur | Limbdi | Limkheda | Lunavada | M.M.Mangrol | Mahuva | Malia-Hatina | Maliya | Malpur | Manavadar | Mandvi | Mangrol | Mehmedabad | Mehsana | Miyagam | Modasa | Morvi | Muli | Mundra | Nadiad | Nakhatrana | Nalia | Narmada | Naswadi | Navasari | Nizar | Okha | Paddhari | Padra | Palanpur | Palitana | Panchmahals | Patan | Pavijetpur | Porbandar | Prantij | Radhanpur | Rahpar | Rajaula | Rajkot | Rajpipla | Ranavav | Sabarkantha | Sanand | Sankheda | Santalpur | Santrampur | Savarkundla | Savli | Sayan | Sayla | Shehra | Sidhpur | Sihor | Sojitra | Sumrasar | Surat | Surendranagar | Talaja | Thara | Tharad | Thasra | Una-Diu | Upleta | Vadgam | Vadodara | Valia | Vallabhipur | Valod | Valsad | Vanthali | Vapi | Vav | Veraval | Vijapur | Viramgam | Visavadar | Visnagar | Vyara | Waghodia | Wankaner ";
+  s_a[13]=" Adampur Mandi | Ambala | Assandh | Bahadurgarh | Barara | Barwala | Bawal | Bawanikhera | Bhiwani | Charkhidadri | Cheeka | Chhachrauli | Dabwali | Ellenabad | Faridabad | Fatehabad | Ferojpur Jhirka | Gharaunda | Gohana | Gurgaon | Hansi | Hisar | Jagadhari | Jatusana | Jhajjar | Jind | Julana | Kaithal | Kalanaur | Kalanwali | Kalka | Karnal | Kosli | Kurukshetra | Loharu | Mahendragarh | Meham | Mewat | Mohindergarh | Naraingarh | Narnaul | Narwana | Nilokheri | Nuh | Palwal | Panchkula | Panipat | Pehowa | Ratia | Rewari | Rohtak | Safidon | Sirsa | Siwani | Sonipat | Tohana | Tohsam | Yamunanagar ";
+  s_a[14]=" Amb | Arki | Banjar | Bharmour | Bilaspur | Chamba | Churah | Dalhousie | Dehra Gopipur | Hamirpur | Jogindernagar | Kalpa | Kangra | Kinnaur | Kullu | Lahaul | Mandi | Nahan | Nalagarh | Nirmand | Nurpur | Palampur | Pangi | Paonta | Pooh | Rajgarh | Rampur Bushahar | Rohru | Shimla | Sirmaur | Solan | Spiti | Sundernagar | Theog | Udaipur | Una";
+  s_a[15]=" Akhnoor | Anantnag | Badgam | Bandipur | Baramulla | Basholi | Bedarwah | Budgam | Doda | Gulmarg | Jammu | Kalakot | Kargil | Karnah | Kathua | Kishtwar | Kulgam | Kupwara | Leh | Mahore | Nagrota | Nobra | Nowshera | Nyoma | Padam | Pahalgam | Patnitop | Poonch | Pulwama | Rajouri | Ramban | Ramnagar | Reasi | Samba | Srinagar | Udhampur | Vaishno Devi ";
+  s_a[16]=" Bagodar | Baharagora | Balumath | Barhi | Barkagaon | Barwadih | Basia | Bermo | Bhandaria | Bhawanathpur | Bishrampur | Bokaro | Bolwa | Bundu | Chaibasa | Chainpur | Chakardharpur | Chandil | Chatra | Chavparan | Daltonganj | Deoghar | Dhanbad | Dumka | Dumri | Garhwa | Garu | Ghaghra | Ghatsila | Giridih | Godda | Gomia | Govindpur | Gumla | Hazaribagh | Hunterganj | Ichak | Itki | Jagarnathpur | Jamshedpur | Jamtara | Japla | Jharmundi | Jhinkpani | Jhumaritalaiya | Kathikund | Kharsawa | Khunti | Koderma | Kolebira | Latehar | Lohardaga | Madhupur | Mahagama | Maheshpur Raj | Mandar | Mandu | Manoharpur | Muri | Nagarutatri | Nala | Noamundi | Pakur | Palamu | Palkot | Patan | Rajdhanwar | Rajmahal | Ramgarh | Ranchi | Sahibganj | Saraikela | Simaria | Simdega | Singhbhum | Tisri | Torpa ";
+  s_a[17]=" Afzalpur | Ainapur | Aland | Alur | Anekal | Ankola | Arsikere | Athani | Aurad | Bableshwar | Badami | Bagalkot | Bagepalli | Bailhongal | Bangalore | Bangalore Rural | Bangarpet | Bantwal | Basavakalyan | Basavanabagewadi | Basavapatna | Belgaum | Bellary | Belthangady | Belur | Bhadravati | Bhalki | Bhatkal | Bidar | Bijapur | Biligi | Chadchan | Challakere | Chamrajnagar | Channagiri | Channapatna | Channarayapatna | Chickmagalur | Chikballapur | Chikkaballapur | Chikkanayakanahalli | Chikkodi | Chikmagalur | Chincholi | Chintamani | Chitradurga | Chittapur | Cowdahalli | Davanagere | Deodurga | Devangere | Devarahippargi | Dharwad | Doddaballapur | Gadag | Gangavathi | Gokak | Gowribdanpur | Gubbi | Gulbarga | Gundlupet | H.B.Halli | H.D. Kote | Haliyal | Hampi | Hangal | Harapanahalli | Hassan | Haveri | Hebri | Hirekerur | Hiriyur | Holalkere | Holenarsipur | Honnali | Honnavar | Hosadurga | Hosakote | Hosanagara | Hospet | Hubli | Hukkeri | Humnabad | Hungund | Hunsagi | Hunsur | Huvinahadagali | Indi | Jagalur | Jamkhandi | Jewargi | Joida | K.R. Nagar | Kadur | Kalghatagi | Kamalapur | Kanakapura | Kannada | Kargal | Karkala | Karwar | Khanapur | Kodagu | Kolar | Kollegal | Koppa | Koppal | Koratageri | Krishnarajapet | Kudligi | Kumta | Kundapur | Kundgol | Kunigal | Kurugodu | Kustagi | Lingsugur | Madikeri | Madugiri | Malavalli | Malur | Mandya | Mangalore | Manipal | Manvi | Mashal | Molkalmuru | Mudalgi | Muddebihal | Mudhol | Mudigere | Mulbagal | Mundagod | Mundargi | Murugod | Mysore | Nagamangala | Nanjangud | Nargund | Narsimrajapur | Navalgund | Nelamangala | Nimburga | Pandavapura | Pavagada | Puttur | Raibag | Raichur | Ramdurg | Ranebennur | Ron | Sagar | Sakleshpur | Salkani | Sandur | Saundatti | Savanur | Sedam | Shahapur | Shankarnarayana | Shikaripura | Shimoga | Shirahatti | Shorapur | Siddapur | Sidlaghatta | Sindagi | Sindhanur | Sira | Sirsi | Siruguppa | Somwarpet | Sorab | Sringeri | Sriniwaspur | Srirangapatna | Sullia | T. Narsipur | Tallak | Tarikere | Telgi | Thirthahalli | Tiptur | Tumkur | Turuvekere | Udupi | Virajpet | Wadi | Yadgiri | Yelburga | Yellapur ";
+  s_a[18]=" Adimaly | Adoor | Agathy | Alappuzha | Alathur | Alleppey | Alwaye | Amini | Androth | Attingal | Badagara | Bitra | Calicut | Cannanore | Chetlet | Ernakulam | Idukki | Irinjalakuda | Kadamath | Kalpeni | Kalpetta | Kanhangad | Kanjirapally | Kannur | Karungapally | Kasargode | Kavarathy | Kiltan | Kochi | Koduvayur | Kollam | Kottayam | Kovalam | Kozhikode | Kunnamkulam | Malappuram | Mananthodi | Manjeri | Mannarghat | Mavelikkara | Minicoy | Munnar | Muvattupuzha | Nedumandad | Nedumgandam | Nilambur | Palai | Palakkad | Palghat | Pathaanamthitta | Pathanamthitta | Payyanur | Peermedu | Perinthalmanna | Perumbavoor | Punalur | Quilon | Ranni | Shertallai | Shoranur | Taliparamba | Tellicherry | Thiruvananthapuram | Thodupuzha | Thrissur | Tirur | Tiruvalla | Trichur | Trivandrum | Uppala | Vadakkanchery | Vikom | Wayanad ";
+  s_a[19]=" Agatti Island | Bingaram Island | Bitra Island | Chetlat Island | Kadmat Island | Kalpeni Island | Kavaratti Island | Kiltan Island | Lakshadweep Sea | Minicoy Island | North Island | South Island ";
+  s_a[20]=" Agar | Ajaigarh | Alirajpur | Amarpatan | Amarwada | Ambah | Anuppur | Arone | Ashoknagar | Ashta | Atner | Babaichichli | Badamalhera | Badarwsas | Badnagar | Badnawar | Badwani | Bagli | Baihar | Balaghat | Baldeogarh | Baldi | Bamori | Banda | Bandhavgarh | Bareli | Baroda | Barwaha | Barwani | Batkakhapa | Begamganj | Beohari | Berasia | Berchha | Betul | Bhainsdehi | Bhander | Bhanpura | Bhikangaon | Bhimpur | Bhind | Bhitarwar | Bhopal | Biaora | Bijadandi | Bijawar | Bijaypur | Bina | Birsa | Birsinghpur | Budhni | Burhanpur | Buxwaha | Chachaura | Chanderi | Chaurai | Chhapara | Chhatarpur | Chhindwara | Chicholi | Chitrangi | Churhat | Dabra | Damoh | Datia | Deori | Deosar | Depalpur | Dewas | Dhar | Dharampuri | Dindori | Gadarwara | Gairatganj | Ganjbasoda | Garoth | Ghansour | Ghatia | Ghatigaon | Ghorandogri | Ghughari | Gogaon | Gohad | Goharganj | Gopalganj | Gotegaon | Gourihar | Guna | Gunnore | Gwalior | Gyraspur | Hanumana | Harda | Harrai | Harsud | Hatta | Hoshangabad | Ichhawar | Indore | Isagarh | Itarsi | Jabalpur | Jabera | Jagdalpur | Jaisinghnagar | Jaithari | Jaitpur | Jaitwara | Jamai | Jaora | Jatara | Jawad | Jhabua | Jobat | Jora | Kakaiya | Kannod | Kannodi | Karanjia | Kareli | Karera | Karhal | Karpa | Kasrawad | Katangi | Katni | Keolari | Khachrod | Khajuraho | Khakner | Khalwa | Khandwa | Khaniadhana | Khargone | Khategaon | Khetia | Khilchipur | Khirkiya | Khurai | Kolaras | Kotma | Kukshi | Kundam | Kurwai | Kusmi | Laher | Lakhnadon | Lamta | Lanji | Lateri | Laundi | Maheshwar | Mahidpurcity | Maihar | Majhagwan | Majholi | Malhargarh | Manasa | Manawar | Mandla | Mandsaur | Manpur | Mauganj | Mawai | Mehgaon | Mhow | Morena | Multai | Mungaoli | Nagod | Nainpur | Narsingarh | Narsinghpur | Narwar | Nasrullaganj | Nateran | Neemuch | Niwari | Niwas | Nowgaon | Pachmarhi | Pandhana | Pandhurna | Panna | Parasia | Patan | Patera | Patharia | Pawai | Petlawad | Pichhore | Piparia | Pohari | Prabhapattan | Punasa | Pushprajgarh | Raghogarh | Raghunathpur | Rahatgarh | Raisen | Rajgarh | Rajpur | Ratlam | Rehli | Rewa | Sabalgarh | Sagar | Sailana | Sanwer | Sarangpur | Sardarpur | Satna | Saunsar | Sehore | Sendhwa | Seondha | Seoni | Seonimalwa | Shahdol | Shahnagar | Shahpur | Shajapur | Sheopur | Sheopurkalan | Shivpuri | Shujalpur | Sidhi | Sihora | Silwani | Singrauli | Sirmour | Sironj | Sitamau | Sohagpur | Sondhwa | Sonkatch | Susner | Tamia | Tarana | Tendukheda | Teonthar | Thandla | Tikamgarh | Timarani | Udaipura | Ujjain | Umaria | Umariapan | Vidisha | Vijayraghogarh | Waraseoni | Zhirnia ";
+  s_a[21]=" Achalpur | Aheri | Ahmednagar | Ahmedpur | Ajara | Akkalkot | Akola | Akole | Akot | Alibagh | Amagaon | Amalner | Ambad | Ambejogai | Amravati | Arjuni Merogaon | Arvi | Ashti | Atpadi | Aurangabad | Ausa | Babhulgaon | Balapur | Baramati | Barshi Takli | Barsi | Basmatnagar | Bassein | Beed | Bhadrawati | Bhamregadh | Bhandara | Bhir | Bhiwandi | Bhiwapur | Bhokar | Bhokardan | Bhoom | Bhor | Bhudargad | Bhusawal | Billoli | Brahmapuri | Buldhana | Butibori | Chalisgaon | Chamorshi | Chandgad | Chandrapur | Chandur | Chanwad | Chhikaldara | Chikhali | Chinchwad | Chiplun | Chopda | Chumur | Dahanu | Dapoli | Darwaha | Daryapur | Daund | Degloor | Delhi Tanda | Deogad | Deolgaonraja | Deori | Desaiganj | Dhadgaon | Dhanora | Dharani | Dhiwadi | Dhule | Dhulia | Digras | Dindori | Edalabad | Erandul | Etapalli | Gadhchiroli | Gadhinglaj | Gaganbavada | Gangakhed | Gangapur | Gevrai | Ghatanji | Golegaon | Gondia | Gondpipri | Goregaon | Guhagar | Hadgaon | Hatkangale | Hinganghat | Hingoli | Hingua | Igatpuri | Indapur | Islampur | Jalgaon | Jalna | Jamkhed | Jamner | Jath | Jawahar | Jintdor | Junnar | Kagal | Kaij | Kalamb | Kalamnuri | Kallam | Kalmeshwar | Kalwan | Kalyan | Kamptee | Kandhar | Kankavali | Kannad | Karad | Karjat | Karmala | Katol | Kavathemankal | Kedgaon | Khadakwasala | Khamgaon | Khed | Khopoli | Khultabad | Kinwat | Kolhapur | Kopargaon | Koregaon | Kudal | Kuhi | Kurkheda | Kusumba | Lakhandur | Langa | Latur | Lonar | Lonavala | Madangad | Madha | Mahabaleshwar | Mahad | Mahagaon | Mahasala | Mahaswad | Malegaon | Malgaon | Malgund | Malkapur | Malsuras | Malwan | Mancher | Mangalwedha | Mangaon | Mangrulpur | Manjalegaon | Manmad | Maregaon | Mehda | Mekhar | Mohadi | Mohol | Mokhada | Morshi | Mouda | Mukhed | Mul | Mumbai | Murbad | Murtizapur | Murud | Nagbhir | Nagpur | Nahavara | Nanded | Nandgaon | Nandnva | Nandurbar | Narkhed | Nashik | Navapur | Ner | Newasa | Nilanga | Niphad | Omerga | Osmanabad | Pachora | Paithan | Palghar | Pali | Pandharkawada | Pandharpur | Panhala | Paranda | Parbhani | Parner | Parola | Parseoni | Partur | Patan | Pathardi | Pathari | Patoda | Pauni | Peint | Pen | Phaltan | Pimpalner | Pirangut | Poladpur | Pune | Pusad | Pusegaon | Radhanagar | Rahuri | Raigad | Rajapur | Rajgurunagar | Rajura | Ralegaon | Ramtek | Ratnagiri | Raver | Risod | Roha | Sakarwadi | Sakoli | Sakri | Salekasa | Samudrapur | Sangamner | Sanganeshwar | Sangli | Sangola | Sanguem | Saoner | Saswad | Satana | Satara | Sawantwadi | Seloo | Shahada | Shahapur | Shahuwadi | Shevgaon | Shirala | Shirol | Shirpur | Shirur | Shirwal | Sholapur | Shri Rampur | Shrigonda | Shrivardhan | Sillod | Sinderwahi | Sindhudurg | Sindkheda | Sindkhedaraja | Sinnar | Sironcha | Soyegaon | Surgena | Talasari | Talegaon S.Ji Pant | Taloda | Tasgaon | Thane | Tirora | Tiwasa | Trimbak | Tuljapur | Tumsar | Udgir | Umarkhed | Umrane | Umrer | Urlikanchan | Vaduj | Velhe | Vengurla | Vijapur | Vita | Wada | Wai | Walchandnagar | Wani | Wardha | Warlydwarud | Warora | Washim | Wathar | Yavatmal | Yawal | Yeola | Yeotmal ";
+  s_a[22]=" Bishnupur | Chakpikarong | Chandel | Chattrik | Churachandpur | Imphal | Jiribam | Kakching | Kalapahar | Mao | Mulam | Parbung | Sadarhills | Saibom | Sempang | Senapati | Sochumer | Taloulong | Tamenglong | Thinghat | Thoubal | Ukhrul ";
+  s_a[23]=" Amlaren | Baghmara | Cherrapunjee | Dadengiri | Garo Hills | Jaintia Hills | Jowai | Khasi Hills | Khliehriat | Mariang | Mawkyrwat | Nongpoh | Nongstoin | Resubelpara | Ri Bhoi | Shillong | Tura | Williamnagar";
+  s_a[24]=" Aizawl | Champhai | Demagiri | Kolasib | Lawngtlai | Lunglei | Mamit | Saiha | Serchhip";
+  s_a[25]=" Dimapur | Jalukie | Kiphire | Kohima | Mokokchung | Mon | Phek | Tuensang | Wokha | Zunheboto ";
+  s_a[26]=" Anandapur | Angul | Anugul | Aska | Athgarh | Athmallik | Attabira | Bagdihi | Balangir | Balasore | Baleswar | Baliguda | Balugaon | Banaigarh | Bangiriposi | Barbil | Bargarh | Baripada | Barkot | Basta | Berhampur | Betanati | Bhadrak | Bhanjanagar | Bhawanipatna | Bhubaneswar | Birmaharajpur | Bisam Cuttack | Boriguma | Boudh | Buguda | Chandbali | Chhatrapur | Chhendipada | Cuttack | Daringbadi | Daspalla | Deodgarh | Deogarh | Dhanmandal | Dharamgarh | Dhenkanal | Digapahandi | Dunguripali | G. Udayagiri | Gajapati | Ganjam | Ghatgaon | Gudari | Gunupur | Hemgiri | Hindol | Jagatsinghapur | Jajpur | Jamankira | Jashipur | Jayapatna | Jeypur | Jharigan | Jharsuguda | Jujumura | Kalahandi | Kalimela | Kamakhyanagar | Kandhamal | Kantabhanji | Kantamal | Karanjia | Kashipur | Kendrapara | Kendujhar | Keonjhar | Khalikote | Khordha | Khurda | Komana | Koraput | Kotagarh | Kuchinda | Lahunipara | Laxmipur | M. Rampur | Malkangiri | Mathili | Mayurbhanj | Mohana | Motu | Nabarangapur | Naktideul | Nandapur | Narlaroad | Narsinghpur | Nayagarh | Nimapara | Nowparatan | Nowrangapur | Nuapada | Padampur | Paikamal | Palla Hara | Papadhandi | Parajang | Pardip | Parlakhemundi | Patnagarh | Pattamundai | Phiringia | Phulbani | Puri | Puruna Katak | R. Udayigiri | Rairakhol | Rairangpur | Rajgangpur | Rajkhariar | Rayagada | Rourkela | Sambalpur | Sohela | Sonapur | Soro | Subarnapur | Sunabeda | Sundergarh | Surada | T. Rampur | Talcher | Telkoi | Titlagarh | Tumudibandha | Udala | Umerkote ";
+  s_a[27]=" Bahur | Karaikal | Mahe | Pondicherry | Purnankuppam | Valudavur | Villianur | Yanam ";
+  s_a[28]=" Abohar | Ajnala | Amritsar | Balachaur | Barnala | Batala | Bathinda | Chandigarh | Dasua | Dinanagar | Faridkot | Fatehgarh Sahib | Fazilka | Ferozepur | Garhashanker | Goindwal | Gurdaspur | Guruharsahai | Hoshiarpur | Jagraon | Jalandhar | Jugial | Kapurthala | Kharar | Kotkapura | Ludhiana | Malaut | Malerkotla | Mansa | Moga | Muktasar | Nabha | Nakodar | Nangal | Nawanshahar | Nawanshahr | Pathankot | Patiala | Patti | Phagwara | Phillaur | Phulmandi | Quadian | Rajpura | Raman | Rayya | Ropar | Rupnagar | Samana | Samrala | Sangrur | Sardulgarh | Sarhind | SAS Nagar | Sultanpur Lodhi | Sunam | Tanda Urmar | Tarn Taran | Zira ";
+  s_a[29]=" Abu Road | Ahore | Ajmer | Aklera | Alwar | Amber | Amet | Anupgarh | Asind | Aspur | Atru | Bagidora | Bali | Bamanwas | Banera | Bansur | Banswara | Baran | Bari | Barisadri | Barmer | Baseri | Bassi | Baswa | Bayana | Beawar | Begun | Behror | Bhadra | Bharatpur | Bhilwara | Bhim | Bhinmal | Bikaner | Bilara | Bundi | Chhabra | Chhipaborad | Chirawa | Chittorgarh | Chohtan | Churu | Dantaramgarh | Dausa | Deedwana | Deeg | Degana | Deogarh | Deoli | Desuri | Dhariawad | Dholpur | Digod | Dudu | Dungarpur | Dungla | Fatehpur | Gangapur | Gangdhar | Gerhi | Ghatol | Girwa | Gogunda | Hanumangarh | Hindaun | Hindoli | Hurda | Jahazpur | Jaipur | Jaisalmer | Jalore | Jhalawar | Jhunjhunu | Jodhpur | Kaman | Kapasan | Karauli | Kekri | Keshoraipatan | Khandar | Kherwara | Khetri | Kishanganj | Kishangarh | Kishangarhbas | Kolayat | Kota | Kotputli | Kotra | Kotri | Kumbalgarh | Kushalgarh | Ladnun | Ladpura | Lalsot | Laxmangarh | Lunkaransar | Mahuwa | Malpura | Malvi | Mandal | Mandalgarh | Mandawar | Mangrol | Marwar-Jn | Merta | Nadbai | Nagaur | Nainwa | Nasirabad | Nathdwara | Nawa | Neem Ka Thana | Newai | Nimbahera | Nohar | Nokha | Onli | Osian | Pachpadara | Pachpahar | Padampur | Pali | Parbatsar | Phagi | Phalodi | Pilani | Pindwara | Pipalda | Pirawa | Pokaran | Pratapgarh | Raipur | Raisinghnagar | Rajgarh | Rajsamand | Ramganj Mandi | Ramgarh | Rashmi | Ratangarh | Reodar | Rupbas | Sadulshahar | Sagwara | Sahabad | Salumber | Sanchore | Sangaria | Sangod | Sapotra | Sarada | Sardarshahar | Sarwar | Sawai Madhopur | Shahapura | Sheo | Sheoganj | Shergarh | Sikar | Sirohi | Siwana | Sojat | Sri Dungargarh | Sri Ganganagar | Sri Karanpur | Sri Madhopur | Sujangarh | Taranagar | Thanaghazi | Tibbi | Tijara | Todaraisingh | Tonk | Udaipur | Udaipurwati | Uniayara | Vallabhnagar | Viratnagar ";
+  s_a[30]=" Barmiak | Be | Bhurtuk | Chhubakha | Chidam | Chubha | Chumikteng | Dentam | Dikchu | Dzongri | Gangtok | Gauzing | Gyalshing | Hema | Kerung | Lachen | Lachung | Lema | Lingtam | Lungthu | Mangan | Namchi | Namthang | Nanga | Nantang | Naya Bazar | Padamachen | Pakhyong | Pemayangtse | Phensang | Rangli | Rinchingpong | Sakyong | Samdong | Singtam | Siniolchu | Sombari | Soreng | Sosing | Tekhug | Temi | Tsetang | Tsomgo | Tumlong | Yangang | Yumtang ";
+  s_a[31]=" Ambasamudram | Anamali | Arakandanallur | Arantangi | Aravakurichi | Ariyalur | Arkonam | Arni | Aruppukottai | Attur | Avanashi | Batlagundu | Bhavani | Chengalpattu | Chengam | Chennai | Chidambaram | Chingleput | Coimbatore | Courtallam | Cuddalore | Cumbum | Denkanikoitah | Devakottai | Dharampuram | Dharmapuri | Dindigul | Erode | Gingee | Gobichettipalayam | Gudalur | Gudiyatham | Harur | Hosur | Jayamkondan | Kallkurichi | Kanchipuram | Kangayam | Kanyakumari | Karaikal | Karaikudi | Karur | Keeranur | Kodaikanal | Kodumudi | Kotagiri | Kovilpatti | Krishnagiri | Kulithalai | Kumbakonam | Kuzhithurai | Madurai | Madurantgam | Manamadurai | Manaparai | Mannargudi | Mayiladuthurai | Mayiladutjurai | Mettupalayam | Metturdam | Mudukulathur | Mulanur | Musiri | Nagapattinam | Nagarcoil | Namakkal | Nanguneri | Natham | Neyveli | Nilgiris | Oddanchatram | Omalpur | Ootacamund | Ooty | Orathanad | Palacode | Palani | Palladum | Papanasam | Paramakudi | Pattukottai | Perambalur | Perundurai | Pollachi | Polur | Pondicherry | Ponnamaravathi | Ponneri | Pudukkottai | Rajapalayam | Ramanathapuram | Rameshwaram | Ranipet | Rasipuram | Salem | Sankagiri | Sankaran | Sathiyamangalam | Sivaganga | Sivakasi | Sriperumpudur | Srivaikundam | Tenkasi | Thanjavur | Theni | Thirumanglam | Thiruraipoondi | Thoothukudi | Thuraiyure | Tindivanam | Tiruchendur | Tiruchengode | Tiruchirappalli | Tirunelvelli | Tirupathur | Tirupur | Tiruttani | Tiruvallur | Tiruvannamalai | Tiruvarur | Tiruvellore | Tiruvettipuram | Trichy | Tuticorin | Udumalpet | Ulundurpet | Usiliampatti | Uthangarai | Valapady | Valliyoor | Vaniyambadi | Vedasandur | Vellore | Velur | Vilathikulam | Villupuram | Virudhachalam | Virudhunagar | Wandiwash | Yercaud ";
+  s_a[32]=" Agartala | Ambasa | Bampurbari | Belonia | Dhalai | Dharam Nagar | Kailashahar | Kamal Krishnabari | Khopaiyapara | Khowai | Phuldungsei | Radha Kishore Pur | Tripura ";
+  s_a[33]=" Achhnera | Agra | Akbarpur | Aliganj | Aligarh | Allahabad | Ambedkar Nagar | Amethi | Amiliya | Amroha | Anola | Atrauli | Auraiya | Azamgarh | Baberu | Badaun | Baghpat | Bagpat | Baheri | Bahraich | Ballia | Balrampur | Banda | Bansdeeh | Bansgaon | Bansi | Barabanki | Bareilly | Basti | Bhadohi | Bharthana | Bharwari | Bhogaon | Bhognipur | Bidhuna | Bijnore | Bikapur | Bilari | Bilgram | Bilhaur | Bindki | Bisalpur | Bisauli | Biswan | Budaun | Budhana | Bulandshahar | Bulandshahr | Capianganj | Chakia | Chandauli | Charkhari | Chhata | Chhibramau | Chirgaon | Chitrakoot | Chunur | Dadri | Dalmau | Dataganj | Debai | Deoband | Deoria | Derapur | Dhampur | Domariyaganj | Dudhi | Etah | Etawah | Faizabad | Farrukhabad | Fatehpur | Firozabad | Garauth | Garhmukteshwar | Gautam Buddha Nagar | Ghatampur | Ghaziabad | Ghazipur | Ghosi | Gonda | Gorakhpur | Gunnaur | Haidergarh | Hamirpur | Hapur | Hardoi | Harraiya | Hasanganj | Hasanpur | Hathras | Jalalabad | Jalaun | Jalesar | Jansath | Jarar | Jasrana | Jaunpur | Jhansi | Jyotiba Phule Nagar | Kadipur | Kaimganj | Kairana | Kaisarganj | Kalpi | Kannauj | Kanpur | Karchhana | Karhal | Karvi | Kasganj | Kaushambi | Kerakat | Khaga | Khair | Khalilabad | Kheri | Konch | Kumaon | Kunda | Kushinagar | Lalganj | Lalitpur | Lucknow | Machlishahar | Maharajganj | Mahoba | Mainpuri | Malihabad | Mariyahu | Math | Mathura | Mau | Maudaha | Maunathbhanjan | Mauranipur | Mawana | Meerut | Mehraun | Meja | Mirzapur | Misrikh | Modinagar | Mohamdabad | Mohamdi | Moradabad | Musafirkhana | Muzaffarnagar | Nagina | Najibabad | Nakur | Nanpara | Naraini | Naugarh | Nawabganj | Nighasan | Noida | Orai | Padrauna | Pahasu | Patti | Pharenda | Phoolpur | Phulpur | Pilibhit | Pitamberpur | Powayan | Pratapgarh | Puranpur | Purwa | Raibareli | Rampur | Ramsanehi Ghat | Rasara | Rath | Robertsganj | Sadabad | Safipur | Sagri | Saharanpur | Sahaswan | Sahjahanpur | Saidpur | Salempur | Salon | Sambhal | Sandila | Sant Kabir Nagar | Sant Ravidas Nagar | Sardhana | Shahabad | Shahganj | Shahjahanpur | Shikohabad | Shravasti | Siddharthnagar | Sidhauli | Sikandra Rao | Sikandrabad | Sitapur | Siyana | Sonbhadra | Soraon | Sultanpur | Tanda | Tarabganj | Tilhar | Unnao | Utraula | Varanasi | Zamania ";
+  s_a[34]=" Almora | Bageshwar | Bhatwari | Chakrata | Chamoli | Champawat | Dehradun | Deoprayag | Dharchula | Dunda | Haldwani | Haridwar | Joshimath | Karan Prayag | Kashipur | Khatima | Kichha | Lansdown | Munsiari | Mussoorie | Nainital | Pantnagar | Partapnagar | Pauri Garhwal | Pithoragarh | Purola | Rajgarh | Ranikhet | Roorkee | Rudraprayag | Tehri Garhwal | Udham Singh Nagar | Ukhimath | Uttarkashi ";
+  s_a[35]=" Adra | Alipurduar | Amlagora | Arambagh | Asansol | Balurghat | Bankura | Bardhaman | Basirhat | Berhampur | Bethuadahari | Birbhum | Birpara | Bishanpur | Bolpur | Bongoan | Bulbulchandi | Burdwan | Calcutta | Canning | Champadanga | Contai | Cooch Behar | Daimond Harbour | Dalkhola | Dantan | Darjeeling | Dhaniakhali | Dhuliyan | Dinajpur | Dinhata | Durgapur | Gangajalghati | Gangarampur | Ghatal | Guskara | Habra | Haldia | Harirampur | Harishchandrapur | Hooghly | Howrah | Islampur | Jagatballavpur | Jalpaiguri | Jhalda | Jhargram | Kakdwip | Kalchini | Kalimpong | Kalna | Kandi | Karimpur | Katwa | Kharagpur | Khatra | Krishnanagar | Mal Bazar | Malda | Manbazar | Mathabhanga | Medinipur | Mekhliganj | Mirzapur | Murshidabad | Nadia | Nagarakata | Nalhati | Nayagarh | Parganas | Purulia | Raiganj | Rampur Hat | Ranaghat | Seharabazar | Siliguri | Suri | Takipur | Tamluk";
+  s_a[36]=" Hyderabad | Warangal | Nizamabad | 	Khammam | Karimnagar | Ramagundam | Mahabubnagar | 	Nalgonda | Adilabad | Suryapet | Siddipet | Miryalaguda | Jagtial ";
+  function print_state(state_id){
+      // given the id of the <select> tag as function argument, it inserts <option> tags
+      var option_str = document.getElementById(state_id);
+      option_str.length=0;
+      option_str.options[0] = new Option('Select State','');
+      option_str.selectedIndex = 0;
+      for (var i=0; i<state_arr.length; i++) {
+          option_str.options[option_str.length] = new Option(state_arr[i],state_arr[i]);
+      }
+  }
+  
+  function print_city(city_id, city_index){
+      var option_str = document.getElementById(city_id);
+      option_str.length=0;	// Fixed by Julian Woods
+      option_str.options[0] = new Option('Select City','');
+      option_str.selectedIndex = 0;
+      var city_arr = s_a[city_index].split("|");
+      for (var i=0; i<city_arr.length; i++) {
+          option_str.options[option_str.length] = new Option(city_arr[i],city_arr[i]);
+      }
+  }
+  </script>
+<style>
+
+
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+  
+  .order-table .table td {
+   font-size: 10px; */
+    padding: 8px 5px 5px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+.customer-box h3 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+    padding: 15px;
+    text-transform: uppercase;
+    background-color: #cd192e;
+    
+}
+
+#btn {
+    cursor: pointer;
+    
+}
+.customer-box .discount-coupon, .customer-box .customer-info{
+    background-color:transparent;
+}
+
+.form {
+    display: grid;
+    gap: 2em;
+  }
+  .promo-carousel {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0;
+  overflow: hidden; }
+
+  
+  .promo-carousel .item-wrap {
+    transform: translateX(0px);
+    width: 400%;
+    position: relative;
+    white-space: nowrap;
+    display: flex; }
+
+.item {
+  background: rgb(138, 12, 12);
+  border-right: 1px solid #eee;
+  text-align: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  border-radius:1%;
+  align-items: center; }
+
+
+  .item a {
+    text-decoration: none;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .item.active {
+    background: #b68d1c; }
+    .item.active a {
+      color: #fff; }
+
+@media (min-width: 768px) {
+  .promo-carousel .item-wrap {
+    width: 200%; } }
+
+  .form__radios {
+    display: grid;
+    gap: 1em;
+  }
+  
+  .form__radio {
+    align-items: center;
+    background-color: #fefdfe;
+    border-radius: 1em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+    display: flex;
+    padding: 1em;
+  }
+  
+  .form__radio label {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    gap: 1em;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    padding-block: 0.5em;
+    padding-inline: 1em;
+  }
+  
+  .icon {
+    block-size: 1em;
+    display: inline-block;
+    fill: currentColor;
+    inline-size: 1em;
+    vertical-align: middle;
+  }
+  
+  .iphone {
+    background-color: #fbf6f7;
+    background-image: linear-gradient(to bottom, #fbf6f7, #fff);
+    border-radius: 2em;
+    block-size: 812px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+    inline-size: 375px;
+    overflow: auto;
+    padding: 2em;
+  }
+  
+  .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 40px;
+      box-sizing: border-box;
+  }
+  
+  .gallery *,
+  .gallery ::before,
+  .gallery ::after {
+      box-sizing: inherit;
+  }
+  
+  .gallery__link {
+      display: block;
+  }
+  
+  .gallery__img {
+      display: block;
+      width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+      .gallery__item {
+          flex-basis: 50%;
+          max-width: 50%;
+      }
+  }
+  
+  /* *** */
+  
+  .tinyx {
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.75);
+      animation: openTinyx 0.2s ease forwards;
+      box-sizing: border-box;
+      z-index: 9;
+  }
+  .tinyx.is-hidden {
+      display: none;
+  }
+  .rec{
+    background-color: #e80404;
+    width: 95px;
+
+    border-radius: 5%;
+    margin-top: 43px;
+   
+    position: absolute;
+   right: 0;
+    
+     }
+
+.btn-shine {
+
+
+  padding: 12px 8px;
+  color: #fff;
+  background: linear-gradient(to right, #eeeeee 0, rgb(88, 6, 6) 10%, #e3dede 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+@-moz-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+
+  
+  .tinyx *,
+  .tinyx ::before,
+  .tinyx ::after {
+      box-sizing: inherit;
+  }
+  
+  .tinyx__close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 7;
+  }
+  
+  .tinyx__close-btn {
+      display: inline-block;
+      margin: 0;
+      padding: 10px 15px;
+      font-family: sans-serif;
+      font-size: 28px;
+      color: #fff;
+      line-height: 1;
+      background-color: transparent;
+      border: 0;
+      transition: opacity 0.2s ease;
+      opacity: 0.5;
+      cursor: pointer;
+  }
+  .tinyx__close-btn:hover,
+  .tinyx__close-btn:focus {
+      opacity: 1;
+  }
+  
+  .tinyx__control-btn {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      margin: 0;
+      padding: 10px 15px;
+      width: 64px;
+      height: 100%;
+      font-family: sans-serif;
+      font-size: 28px;
+      color: #fff;
+      line-height: 1;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: 0;
+      transition: opacity 0.2s ease;
+      opacity: 0.1;
+      cursor: pointer;
+      z-index: 3;
+  }
+  .tinyx__control-btn:hover,
+  .tinyx__control-btn:focus {
+      opacity: 1;
+  }
+  .tinyx__control-btn--prev {
+      left: 0;
+  }
+  .tinyx__control-btn--next {
+      right: 0;
+  }
+  @media only screen and (max-width: 768px) {
+  .xs-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+  .tinyx__cont {
+      position: relative;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+      animation: openTinyxCont 0.3s ease forwards;
+  }
+  
+  .tinyx__img {
+      display: block;
+      max-width: 90vw;
+      max-height: 90vh;
+  }
+  
+  @keyframes openTinyx {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+  
+  @keyframes openTinyxCont {
+      0% {
+          transform: scale(0.1);
+      }
+      100% {
+          transform: scale(1);
+      }
+  }
+ 
+  
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+
+.plans {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  max-width: 970px;
+  padding: 15px 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 20px;
+ 
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.plans .plan input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.plans .plan {
+  cursor: pointer;
+  width: 48.5%;
+}
+
+.plans .plan .plan-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 11px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 2px solid #e1e2e7;
+  border-radius: 10px;
+  -webkit-transition: -webkit-box-shadow 0.4s;
+  transition: -webkit-box-shadow 0.4s;
+  -o-transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s;
+  transition: box-shadow 0.4s, -webkit-box-shadow 0.4s;
+  position: relative;
+}
+
+.plans .plan .plan-content img {
+  margin-right: 30px;
+  height: 72px;
+}
+
+.plans .plan .plan-details span {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  color: #252f42;
+}
+
+.container .title {
+  font-size: 16px;
+  font-weight: 500;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  color: #252f42;
+  margin-bottom: 20px;
+}
+
+.plans .plan .plan-details p {
+  color: #646a79;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.plans .plan .plan-content:hover {
+  -webkit-box-shadow: 0px 3px 5px 0px #e8e8e8;
+  box-shadow: 0px 3px 5px 0px #e8e8e8;
+}
+
+.plans .plan input[type="radio"]:checked + .plan-content:after {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  background: #216fe0;
+  right: 20px;
+  top: 20px;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  -webkit-box-shadow: 0px 0px 0px 2px #0066ff;
+  box-shadow: 0px 0px 0px 2px #0066ff;
+}
+
+.plans .plan input[type="radio"]:checked + .plan-content {
+  border: 2px solid #216ee0;
+  background: #eaf1fe;
+  -webkit-transition: ease-in 0.3s;
+  -o-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+
+@media screen and (max-width: 991px) {
+  .plans {
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+   
+  }
+
+  .plans .plan {
+    width: 100%;
+  }
+
+  .plan.complete-plan {
+    margin-top: 20px;
+  }
+
+  .plans .plan .plan-content .plan-details {
+    width: 70%;
+    display: inline-block;
+  }
+
+  .plans .plan input[type="radio"]:checked + .plan-content:after {
+    top: 45%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .plans .plan .plan-content .plan-details {
+    width: 60%;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .plans .plan .plan-content img {
+    margin-bottom: 20px;
+    height: 56px;
+    -webkit-transition: height 0.4s;
+    -o-transition: height 0.4s;
+    transition: height 0.4s;
+  }
+
+  .plans .plan input[type="radio"]:checked + .plan-content:after {
+    top: 20px;
+    right: 10px;
+  }
+
+  .plans .plan .plan-content .plan-details {
+    width: 100%;
+  }
+
+  .plans .plan .plan-content {
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+}
+
+/* inspiration */
+.inspiration {
+  font-size: 12px;
+  margin-top: 50px;
+  position: absolute;
+  bottom: 10px;
+  font-weight: 300;
+}
+
+.inspiration a {
+  color: #666;
+}
+@media screen and (max-width: 767px) {
+  /* inspiration */
+  .inspiration {
+    display: none;
+  }
+}
+.rec1{
+    background-color: #e80404;
+    width: 95px;
+
+    border-radius: 5%;
+ margin-top: -20px;
+
+    position: absolute;
+
+    
+     }
+
+.btn-shine {
+
+
+  padding: 12px 8px;
+  color: #fff;
+  background: linear-gradient(to right, #eeeeee 0, rgb(88, 6, 6) 10%, #e3dede 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+@-moz-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+
+
+</style>
+
+<body class="our">
+
+  <div id="pre-loader">
+    <img src="tshirt/loader.gif" alt="Loading..." />
+  </div>
+
+
+  <div class="pageWrapper">
+
+    <!--Search Form Drawer-->
+    <div class="search">
+      <div class="search__form">
+        <form class="search-bar__form" action="#">
+          <button class="go-btn search__button" type="submit"><i class="icon
+              anm anm-search-l"></i></button>
+          <input class="search__input" type="search" name="q" value=""
+            placeholder="Search entire store..."
+            aria-label="Search" autocomplete="off">
+        </form>
+        <button type="button" class="search-trigger close-btn"><i class="anm
+            anm-times-l"></i></button>
+      </div>
+    </div>
+    <!--End Search Form Drawer-->
+
+
+
+    <!--Top Header-->
+    <div class="top-header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-10 col-sm-8 col-md-5 col-lg-4">
+            <p class="phone-no"><i class="anm anm-phone-s"></i> +91 1234567890</p>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 d-none d-lg-none d-md-block
+            d-lg-block">
+            <div class="text-center">
+              <p class="top-header_middle-text">𝚆𝚎𝚊𝚛 𝚢𝚘𝚞𝚛 𝚘𝚠𝚗
+                𝚜𝚝𝚢𝚕𝚎</p>
+            </div>
+          </div>
+          <div class="col-2 col-sm-4 col-md-3 col-lg-4 text-right">
+            <span class="user-menu d-block d-lg-none"><i class="anm
+                anm-user-al" aria-hidden="true"></i></span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Top Header-->
+
+
+
+    <!--Header-->
+    <div class="header-wrap animated d-flex border-bottom" style="background-color: #fff;">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+
+          <!--Desktop Logo-->
+          <div class="logo col-md-2 col-lg-2 d-none d-lg-block">
+            <a href="{% url 'home' %}">
+              <img src="/static/tshirt/logo.jpeg" alt="tshirt" title="tshirt"
+                height="50" />
+            </a>
+          </div>
+          <!--End Desktop Logo-->
+
+          <div class="col-2 col-sm-3 col-md-3 col-lg-8">
+            <center>
+              <p class="quote">🅱🆄🆉🆉🆈 🅲🅻🅾🆂🅴🆃</p>
+            </center>
+          </div>
+
+
+          <!--Mobile Logo-->
+          <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-block d-lg-none
+            mobile-logo">
+            <div class="logo">
+              <a href="{% url 'home' %}">
+                <img src="/static/tshirt/logo.jpeg" alt="tshirt print" title="tshirt
+                  print" height="50" />
+              </a>
+            </div>
+          </div>
+          <!--Mobile Logo-->
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+    <!--End Header-->
+
+  <div class="promo-carousel" id="grouploop-1">
+              <div class="item-wrap">
+                <div class="item active">
+                  <a href="#">Recent Deals</a>
+                </div>
+                <div class="item">
+                  <a href="#">Super Special</a>
+                </div>
+                <div class="item">
+                  <a href="#">Promo Code
+                    <br/>BUZZ40</a>
+                </div>
+                <div class="item">
+                  <a href="#">4% Off Sale!</a>
+                </div>
+                <div class="item">
+                  <a href="#">New Products!</a>
+                </div>
+                <div class="item">
+                  <a href="#">Used deals</a>
+                </div>
+              </div>
+            </div>
+        <!--Body Content-->
+        <div id="page-content">
+            <!--Page Title-->
+            <div class="page section-header text-center">
+                <div class="page-title">
+                    <div class="wrapper">
+                         {% include 'messages.html' %}
+                        <h1 class="page-width">Checkout</h1>
+                    </div>
+                </div>
+            </div>
+            <!--End Page Title-->
+
+            <div class="container">
+                <div class="row">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-3">
+                                  <div class="customer-box customer-coupon">
+                                      
+                                      {% if coupon_error == 'Invalid Coupon Code' %}
+                                        <div class='alert alert-info'>
+                                          {{coupon_error}}
+                                        </div>
+                                        {% elif coupon_success !=  None %}
+                                        <div class='alert alert-info'>
+                                          {{coupon_success}}
+                                        </div>
+                                    {% endif %}
+                                    
+
+                                      
+                                          
+                                      <h3 class="font-15 xs-font-13"><i class="icon anm anm-gift-l"></i> Have a coupon? <a href="#have-coupon" class="text-white text-decoration-underline" data-toggle="collapse">Click here to enter your code</a></h3>
+                                      <div id="have-coupon" class="collapse coupon-checkout-content">
+                                          <div class="discount-coupon">
+                                              <div id="coupon" class="coupon-dec tab-pane active">
+                                                  <p class="margin-10px-bottom" >Enter your coupon code if you have one.</p>
+                                                  <label class="required get" for="coupon-code"><span class="required-f">*</span> Coupon</label>
+                                                  <input  name="coupon" id="coupon-code" required="" type="text" class="mb-3" >
+                                                  <button Onclick="payprocess()" class="coupon-btn btn">Apply Coupon</button>
+                                                  
+                                              </div>
+                                          </div>
+                                      </div>
+                                      
+                                  </div>
+
+                              </div>
+                              <script>
+                                  var someInput = document.querySelector('#coupon-code');
+someInput.addEventListener('input', function () {
+    someInput.value = someInput.value.toUpperCase();
+});
+                              </script>
+        </div>
+
+
+                <div class="row billing-fields xs-column-reverse">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 sm-margin-30px-bottom">
+                        <div class="create-ac-content bg-light-gray padding-20px-all">
+                            <form method = "POST" id = "abcxyz" action="{% url 'checkout' %}" >
+                              {% csrf_token %}
+                                <fieldset>
+                                    <h2 class="login-title mb-3">Billing details</h2>
+                                    <div class="row">
+                                       
+                                       <input name="coupon" id="couponx"  type="hidden" class="form-control" placeholder="Name">
+                                        <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
+                                            <label for="input-firstname">First Name <span
+                                                    class="required-f">*</span></label>
+                                            <input name="firstname" id="input-firstname" type="text" required="required" >
+                                        </div>
+                                        <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
+                                            <label for="input-lastname">Last Name <span
+                                                    class="required-f">*</span></label>
+                                            <input name="lastname" id="input-lastname" type="text" required="required" >
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
+                                            <label for="input-email">E-Mail <span class="required-f">*</span></label>
+                                            <input name="email" id="input-email" type="email" required="required" >
+                                        </div>
+                                        <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
+                                            <label for="input-telephone">Telephone <span
+                                                    class="required-f">*</span></label>
+                                            <input name="telephone" id="input-telephone" type="tel" required="required" >
+                                        </div>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset>
+                                    <div class="row">
+
+                                        <div class="form-group col-md-12 col-lg-12 col-xl-12 required">
+                                            <label for="input-address-1">Address <span
+                                                    class="required-f">*</span></label>
+                                            <input name="address_1" id="input-address-1" type="text" required="required" >
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-md-12 col-lg-12 col-xl-12">
+                                            <label for="input-address-2">Apartment <span
+                                                    class="required-f">*</span></label>
+                                            <input name="address_2" id="input-address-2" type="text" required="required" >
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
+                                            <label for="input-city">State <span class="required-f">*</span></label>
+                                        
+                                             <select onchange="print_city('input-city', this.selectedIndex);" id="input-state" name ="state" class="form-control" required></select>
+                                        </div>
+                                        <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
+                                            <label for="input-city">City <span class="required-f">*</span></label>
+                               
+                                            <select id ="input-city" name="city"  class="form-control" required></select>
+                                            <script language="javascript">print_state("input-state");</script>
+                                        </div>
+                                        
+                                        <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
+                                            <label for="input-postcode">Post Code <span
+                                                    class="required-f">*</span></label>
+                                            <input name="postcode" id="input-postcode" type="text" required="required" >
+                                        </div>
+
+                                    </div>
+
+                                </fieldset>
+
+ <div class="plans">
+                                    <div class="title">Choose a pricing plan</div>
+                                    <label onClick="payprocess()" class="plan prepaid-plan" for="prepaid">
+                                      <input onClick="payprocess()" checked type="radio" name="payment-method" id="prepaid" value="prepaid" />
+                                      <div class="plan-content">
+                                
+                                        <div class="plan-details">
+                                            
+                                          <span>Prepaid</span>
+                                       
+                                        </div>
+                                      </div>
+                                      <div class="rec1" style="background-color: #e80404">
+                                        <span class="btn-shine" target="_blank">Recomended</span></div>
+                                    </label>
+                                
+                                    <label onClick="payprocess()" class="plan cod-plan" for="cod">
+                                      <input onClick="payprocess()" type="radio" id="cod" name="payment-method" value="cod" />
+                                      <div class="plan-content">
+                                  
+                                        <div class="plan-details">
+                                          <span>COD</span>
+                                    
+                                        </div>
+                                      </div>
+                                         
+                                    </label>
+                                
+                                  </div>
+                                 <div id="Ref1" class="hidden row" style="margin:auto">
+                                      <p style ='font-weight: 600;'>10 Rs extra will be added for cash on delivery order<p>
+                                     </div>
+                                <fieldset>
+                                  <br>
+                            
+                                </fieldset>
+                                <fieldset>
+                                  <div class="row">  
+                                    <div class="form-group col-md-12 col-lg-12 col-xl-12">
+                                <div class="order-button-payment">
+                                  <button class="btn" value="Place order" type="submit">Place order</button>
+                              </div>  </div></div>
+                              
+                            </fieldset>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                        <div class="your-order-payment">
+                            <div class="your-order">
+                                <h2 class="order-title mb-4">Your Order</h2>
+
+                                <div class="table-responsive-sm order-table">
+                                    <table class="bg-white table table-bordered table-hover text-center"  id="tbl">
+                                        <thead>
+                                            <tr>
+                                              
+                                              <th scope="col">Product Name</th>
+                                              <th scope="col">Image</th>
+                                              <th scope="col">Price</th>
+                                              <th scope="col">Discounted Price</th>
+                                              <th scope="col">Size</th>
+                                              <th scope="col">Color</th>
+                                              <th scope="col">Qty</th>
+                                              <th scope="col">Product-Discount</th>
+                                              <th scope="col">Total-Product-Discount</th>
+                                              <th scope="col">Subtotal</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                          {% for key,value in request.session.cart.items %}
+                                            <tr>
+                                                <td data-label="Product Name" >{{value.name}}</td>
+                                               {% if value.image != "featuredproduct" %}
+                                                <td data-label="Image"><div class="gallery js-lightbox" data-lightbox-id="lightbox_01" style="margin-bottom: 15px; display: inline-block;">
+                                                  <div class="gallery__item">   
+                                                    <a href="{{value.image}}" target="_blank" class="gallery__link js-lightbox-img-link">
+                                                     <img class="pimg" src="{{value.image}}" alt=""></a>    </div></td>
+                                                     {% else %}
+                                                     <td data-label="Image"><div class="gallery js-lightbox" data-lightbox-id="lightbox_01" style="margin-bottom: 15px; display: inline-block;">
+                                                  <div class="gallery__item">   
+                                                    <a href="{{value.photo}}" target="_blank" class="gallery__link js-lightbox-img-link">
+                                                     <img class="pimg" src="{{value.photo}}" alt=""></a>    </div></td>
+                                                  {% endif %}
+                                                <td data-label="Price">Rs.{{value.actualprice }}</td>  
+                                                <td data-label="Discounted Price">Rs.{{value.price}}</td>
+                                                <td data-label="Size">{{value.sizeT}}</td>
+                                                <td data-label="Color">{{value.colorT}}</td>
+                                                <td data-label="Qty">{{value.quantity}}</td>
+                                                <td data-label="Product-Discount">Rs.{{value.discount}}</td>
+                                                <td data-label="Total-Products-Discount">Rs.{{ value.discount|multiply:value.quantity }}
+                                                </td>
+                                                <td data-label="Subtotal">Rs.{{ value.price|multiply:value.quantity }}
+                                                </td>
+                                            </tr>
+                                            {% endfor %}
+                                            
+                                        </tbody> <tbody>
+                                          <tr>
+                                            <td colspan="9" style=" background: #8a0c0c; color: white;"  id="btn">
+                                              <span id="btn" >Show more</span>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                        <tfoot class="font-weight-600">
+                                            <tr>
+                                                <td colspan="8" class="text-right" data-label="You-saved">You-saved </td>
+                                                <td id="charges" >RS. {{ total_discount }}
+                                                 
+                                    </td>
+                                            </tr>
+                                          
+                                            <tr>
+                                                <td colspan="8" class="text-right" data-label="Subtotal">Subtotal </td>
+                                                <td id="charges" >RS. {{ total_bill }}
+                                                 
+                                    </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="8" class="text-right">Total</td>
+                                                <td id="totalcharge" data-label="Total">RS. {{ total_bill }} </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <hr />
+
+                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--End Body Content-->
+               <script>
+     var divtotal = document.getElementById('totalcharge');
+ console.log(divtotal);
+ 
+</script>
+
+  </footer>
+ <script>
+
+                                      // Get all the radio buttons and put them into an array
+                                      var radioButtons = Array.from(document.querySelectorAll("input[type='radio']"));
+                                       
+                                      // Loop through the array of radio buttons
+                                      radioButtons.forEach(function(btn){
+                                        // Set up a click event handling function for each button
+                                        btn.addEventListener("click", radioWithText);
+                                      });
+                                      
+                                      // No need to pass any data to this function because the button that triggers it
+                                      // ("this" in the code below) can just look at its own HTML value to know what the
+                                      // meaning of the button is.
+                                      function radioWithText() {
+                                        // Get references to the elements the function needs to work with.
+                                        var ref1 = document.getElementById('Ref1');
+                                        var ref = document.getElementById('Ref');
+                                          
+                                        if(this.value ==='cod'){
+                                          // Instead of gettting/setting inline styles with the style property, just add
+                                          // or remove pre-made CSS classes. Since all the textboxes and labels start out
+                                          // with the CSS "hidden" class applied to them, it's just a matter of adding that
+                                          // class or removing it as necessary.
+                                          
+                                          ref1.classList.remove("hidden");
+                                          ref.classList.remove("hidden");
+                                        } else {
+                                          ref1.classList.add("hidden");
+                                          ref.classList.add("hidden");
+                                        }
+                                      }
+                                    </script>
+
+
+  
+  <!--Scoll Top-->
+  <span id="site-scroll"><i class="icon anm anm-angle-up-r"></i></span>
+  <!--End Scoll Top-->
+
+            <!--Footer-->
+            <footer id="footer" class="footer-2">
+           <!--   <div class="newsletter-section">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-7 w-100 d-flex
+                      justify-content-start align-items-center">
+                      <div class="display-table">
+                        <div class="display-table-cell footer-newsletter">
+                          <div class="section-header text-center">
+                            <label class="h2"><span>sign up for </span>newsletter</label>
+                          </div>
+                          <form action="#" method="post">
+                            <div class="input-group">
+                              <input type="email" class="input-group__field
+                                newsletter__input" name="EMAIL" value=""
+                                placeholder="Email address" required="">
+                              <span class="input-group__btn">
+                                <button type="submit" class="btn
+                                  newsletter__submit" name="commit"
+                                  id="Subscribe"><span
+                                    class="newsletter__submit-text--large">Subscribe</span></button>
+                              </span>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-5 d-flex
+                      justify-content-end align-items-center">
+                      <div class="footer-social">
+                        <ul class="list--inline site-footer__social-icons
+                          social-icons">
+                          <li><a class="social-icons__link" href="#"
+                              target="_blank"><i class="icon
+                                icon-facebook"></i></a></li>
+                          
+                          <li><a class="social-icons__link" href="https://www.instagram.com/buzzycloset/"
+                              target="_blank"><i class="icon
+                                icon-instagram"></i> <span
+                                class="icon__fallback-text">Instagram</span></a></li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <div class="site-footer" style="background-color: black;">
+                <div class="container">
+                  <!--Footer Links-->
+                  <div class="footer-top">
+                    <div class="row">
+                      <div class="col-12 col-sm-12 col-md-3 col-lg-3
+                        footer-links">
+                        <h4 class="h4">Tshirt</h4>
+                        <p><b>Fabric</b></p>
+                        <p>100% Cotton</p>
+                        <p><b>Standards</b></p>
+                        <p>• Don’t Bleach & Wring</p> 
+                        <p>• Dry in Shade</p>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-3 col-lg-3
+                        footer-links">
+                        <h4 class="h4">Informations</h4>
+                        <ul>
+                          <li><a href="{% url 'aboutus' %}">About us</a></li>
+                          <li><a href="{% url 'rp' %}">Return Policy</a></li>
+                          <li><a href="{% url 'pp' %}">Privacy policy</a></li>
+                          <li><a href="{% url 'tc' %}">Terms &amp; condition</a></li>
+                          <li><a href="#">My Account</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-3 col-lg-3
+                        footer-links">
+                        <h4 class="h4">Customer Services</h4>
+                        <ul>
+                          <li><a href="{% url 'pp' %}">Request Personal Data</a></li>
+                          <li><a href="{% url 'shipping' %}">Shipping and Delivery Timeline</a></li>
+                          
+                        </ul>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-3 col-lg-3
+                        contact-box">
+                        <h4 class="h4">Contact Us</h4>
+                        <ul class="addressFooter">
+                          <li><i class="icon anm anm-map-marker-al"></i><p><br>Ujjain MP</p>
+                          </li>
+                          <li class="phone"><i class="icon anm anm-phone-s"></i>
+                            <p>(+91) 7898276373</p>
+                          </li>
+                          <li class="email"><i class="icon anm anm-envelope-l"></i>
+                            <p>buzzycloset@gmail.com</p>
+                          </li>
+                        </ul> <ul class="list--inline site-footer__social-icons
+                          social-icons">
+                          <li><a class="social-icons__link" href="#"
+                              target="_blank"><i class="icon
+                                icon-facebook"style="color: white;"></i></a></li>
+                          
+                          <li><a class="social-icons__link" href="https://www.instagram.com/buzzycloset/"
+                              target="_blank"><i class="icon
+                                icon-instagram"style="color: white;"></i> <span
+                                class="icon__fallback-text">Instagram</span></a></li>
+                          
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!--End Footer Links-->
+                  <hr>
+                  <div class="footer-bottom">
+                    <div class="row">
+                      <!--Footer Copyright-->
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 order-1
+                        order-md-0 order-lg-0 order-sm-1 copyright
+                        text-sm-center
+                        text-md-left text-lg-left"><span></span> <a></a></div>
+                      <!--End Footer Copyright-->
+                      <!--Footer Payment Icon-->
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 order-0
+                        order-md-1 order-lg-1 order-sm-0 payment-icons
+                        text-right
+                        text-md-center">
+                        <img src="/static/tshirt/cards.jpg" alt="Payment">
+                      </div>
+                      <!--End Footer Payment Icon-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+
+
+
+
+           
+
+  <!-- Including Jquery -->
+  
+  <script src="/static/assets/js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="/static/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="/static/assets/js/vendor/jquery.cookie.js"></script>
+  <script src="/static/assets/js/vendor/wow.min.js"></script>
+  <!-- Including Javascript -->
+  <script src="/static/assets/js/bootstrap.min.js"></script>
+  <script src="/static/assets/js/plugins.js"></script>
+  <script src="/static/assets/js/popper.min.js"></script>
+  <script src="/static/assets/js/lazysizes.js"></script>
+  <script src="/static/assets/js/main.js"></script>
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+            <script type="text/javascript" src="/static/assets/js/grouploop-1.0.0.min.js"></script>
+            <script>
+            /*! 
+Name: jQuery grouploop plugin
+Verison: 1.0
+Author: Scott Alguire
+Repository: https://github.com/scottalguire/grouploop
+*/
+!(function (d) {
+  d.fn.extend({
+    grouploop: function (n) {
+      var i,
+        e,
+        t = d.extend(
+          {
+            velocity: 2,
+            forward: !0,
+            childNode: ".item",
+            childWrapper: ".item-wrap",
+            pauseOnHover: !0,
+            complete: null,
+          },
+          n
+        ),
+        r = this,
+        o =
+          d(window).width() <= 768 ? 2 * d(window).width() : d(window).width(),
+        a = t.velocity;
+      function c() {
+        t.forward
+          ? i <= 0
+            ? ((i += 1 * a),
+              d(r)
+                .find(t.childWrapper)
+                .css("transform", "translateX(" + i + "px)"))
+            : (d(r)
+                .find(t.childWrapper)
+                .css("transform", "translateX(" + -o + ")"),
+              (i = -o))
+          : -o <= i
+          ? ((i -= 1 * a),
+            d(r)
+              .find(t.childWrapper)
+              .css("transform", "translateX(" + i + "px)"))
+          : (d(r).find(t.childWrapper).css("transform", "translateX(0)"),
+            (i = 0)),
+          (e = window.requestAnimationFrame(c));
+      }
+      return (
+        window.addEventListener("resize", function () {
+          (o = d(window).width()) <= 768
+            ? (console.log("Small breakpoint. Doubling wrapper width"),
+              (o *= 2))
+            : (o = d(window).width());
+        }),
+        t.forward
+          ? ((i = -o),
+            d(r).each(function (n, i) {
+              d(i)
+                .find(t.childWrapper)
+                .each(function (n, i) {
+                  d(d(i).find(d(t.childNode).get().reverse())).each(
+                    function () {
+                      d(this).clone().prependTo(i);
+                    }
+                  );
+                });
+            }))
+          : ((i = d(r)
+              .find(t.childWrapper)
+              .css("transform")
+              .split(/[()]/)[1]
+              .split(",")[4]),
+            d(r).each(function (n, i) {
+              d(i)
+                .find(t.childWrapper)
+                .each(function (n, i) {
+                  d(i)
+                    .find(t.childNode)
+                    .each(function () {
+                      d(this).clone().appendTo(i);
+                    });
+                });
+            })),
+        (e = window.requestAnimationFrame(c)),
+        t.pauseOnHover &&
+          d(this).hover(
+            function () {
+              cancelAnimationFrame(e);
+            },
+            function () {
+              e = window.requestAnimationFrame(c);
+            }
+          ),
+        this.each(function () {
+          d.isFunction(t.complete) && t.complete.call(this);
+        })
+      );
+    },
+  });
+})(jQuery);
+
+            
+            
+            
+            
+            
+            
+            /*! 
+Name: jQuery grouploop plugin
+Verison: 1.0
+Author: Scott Alguire
+Repository: https://github.com/scottalguire/grouploop
+*/
+!(function (d) {
+  d.fn.extend({
+    grouploop: function (n) {
+      var i,
+        e,
+        t = d.extend(
+          {
+            velocity: 2,
+            forward: !0,
+            childNode: ".item",
+            childWrapper: ".item-wrap",
+            pauseOnHover: !0,
+            complete: null,
+          },
+          n
+        ),
+        r = this,
+        o =
+          d(window).width() <= 768 ? 2 * d(window).width() : d(window).width(),
+        a = t.velocity;
+      function c() {
+        t.forward
+          ? i <= 0
+            ? ((i += 1 * a),
+              d(r)
+                .find(t.childWrapper)
+                .css("transform", "translateX(" + i + "px)"))
+            : (d(r)
+                .find(t.childWrapper)
+                .css("transform", "translateX(" + -o + ")"),
+              (i = -o))
+          : -o <= i
+          ? ((i -= 1 * a),
+            d(r)
+              .find(t.childWrapper)
+              .css("transform", "translateX(" + i + "px)"))
+          : (d(r).find(t.childWrapper).css("transform", "translateX(0)"),
+            (i = 0)),
+          (e = window.requestAnimationFrame(c));
+      }
+      return (
+        window.addEventListener("resize", function () {
+          (o = d(window).width()) <= 768
+            ? (console.log("Small breakpoint. Doubling wrapper width"),
+              (o *= 2))
+            : (o = d(window).width());
+        }),
+        t.forward
+          ? ((i = -o),
+            d(r).each(function (n, i) {
+              d(i)
+                .find(t.childWrapper)
+                .each(function (n, i) {
+                  d(d(i).find(d(t.childNode).get().reverse())).each(
+                    function () {
+                      d(this).clone().prependTo(i);
+                    }
+                  );
+                });
+            }))
+          : ((i = d(r)
+              .find(t.childWrapper)
+              .css("transform")
+              .split(/[()]/)[1]
+              .split(",")[4]),
+            d(r).each(function (n, i) {
+              d(i)
+                .find(t.childWrapper)
+                .each(function (n, i) {
+                  d(i)
+                    .find(t.childNode)
+                    .each(function () {
+                      d(this).clone().appendTo(i);
+                    });
+                });
+            })),
+        (e = window.requestAnimationFrame(c)),
+        t.pauseOnHover &&
+          d(this).hover(
+            function () {
+              cancelAnimationFrame(e);
+            },
+            function () {
+              e = window.requestAnimationFrame(c);
+            }
+          ),
+        this.each(function () {
+          d.isFunction(t.complete) && t.complete.call(this);
+        })
+      );
+    },
+  });
+})(jQuery);
+
+            
+            
+            
+            
+            
+            
+            
+            
+              $('#grouploop-1').grouploop({
+                velocity: 2,
+                forward: false,
+                pauseOnHover: true,
+                childNode: ".item",
+                childWrapper: ".item-wrap",
+                complete: function () { console.log("Initialized a grouploop with id: " + $(this).attr('id')) }
+              });
+              $('#grouploop-2').grouploop({
+                velocity: 5,
+                forward: true,
+                pauseOnHover: false,
+                childNode: ".item",
+                childWrapper: ".item-wrap"
+              });
+              $('#grouploop-3').grouploop({
+                velocity: 1,
+                forward: false,
+                pauseOnHover: true,
+                childNode: ".item",
+                childWrapper: ".item-wrap"
+              });
+              $('#grouploop-4').grouploop({
+                velocity: 3,
+                forward: true,
+                pauseOnHover: true,
+                childNode: ".item",
+                childWrapper: ".item-wrap"
+              });
+              
+              
+              
+              
+              
+              
+            </script>
+  
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<script>var shownDefault = 2
+  var numShown = shownDefault; // Initial rows shown & index
+  var $table = $('#tbl').find('tbody');  // tbody containing all the rows
+  var numRows = $table.find('tr').length; // Total # rows
+  
+  var moretext = "Show more";
+  var lesstext = "Show less";
+  
+  $(document).ready(function () {
+      $table.find('tr:gt(' + (numShown - 1) + ')').hide()                      
+      $('#btn').click(function() {
+          if (numShown === numRows) {
+            // since we show all rows node, hiding some
+            numShown = shownDefault;
+            $table.find('tr:gt(' + (numShown - 1) + ')').hide()
+            $('#btn').text(moretext)                              
+          } else {
+            numShown = numRows;
+            $('#btn').text(lesstext)                    
+          }        
+          $table.find('tr:lt(' + numShown + ')').show();
+      });        
+  });
+  
+  function payprocess(){
+      var pay = document.getElementById('prepaid').value;
+      var coupon = document.getElementById('coupon-code').value;
+      document.getElementById("couponx").value = coupon
+      
+      if ( document.getElementById('cod').checked)
+      {
+          pay = document.getElementById('cod').value;
+      }
+      
+      $.ajax({
+    url: "{% url 'checkout' %}",
+    type: 'GET',
+    data:{
+        coupon : coupon,
+        pay : pay,
+        
+    },
+  success: function (data) {
+  var divtotal = document.getElementById('totalcharge');
+  document.getElementById('totalcharge').innerHTML = "";
+   divtotal.innerHTML = divtotal.innerHTML + 'Rs.'+ data.total_bill;
+  }
+  });
+  }
+ function prepaidcharge()
+ {
+     cosole.log(document.getElementById('charges').innerHTML);
+      var divtotal = document.getElementById('totalcharge');    
+      document.getElementById('totalcharge').innerHTML = "";
+      var sutotal = document.getElementById('charges');
+      divtotal.innerHTML = sutotal.innerHTML;
+ }
+  
+  </script>
+  </div>
+</body>
+
+<!-- Tshirt Printing-->
+
+</html>

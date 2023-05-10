@@ -1,0 +1,74 @@
+
+{% extends 'base.html' %}
+
+{% load cart_tag %}
+
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+  .gradient-custom {
+/* fallback for old browsers */
+background: #cd9cf2;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to top left, rgba(205, 156, 242, 1), rgba(246, 243, 255, 1));
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to top left, rgba(205, 156, 242, 1), rgba(246, 243, 255, 1))
+}
+</style>
+
+
+<section class="h-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-10 col-xl-8">
+        <div class="card" style="border-radius: 10px;">
+          <div class="card-header px-4 py-5">
+           
+          </div>
+          <div class="card-body p-4">
+           
+           
+            <div class="card shadow-0 border mb-4">
+              {% for x,y,z,p,q in context %}
+              <div class="card-body">
+                <div class="row">
+
+                 
+                     <a href="{{ x.photo }}" download>
+                    <img src="{{ x.photo }}" class="img-fluid" alt="Phone">
+                     </a>
+                 
+                  <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
+                    <p class="text-muted mb-0"></p>
+                  </div>
+                  <div class="col-md-4 text-center d-flex justify-content-center align-items-center">
+                    <p class="text-muted mb-0 small"><font size="+2"><strong>{{ z }}</strong></font></p>
+                  </div>
+                  <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
+                    <h1 class="text-muted mb-0 small"><font size="+2"><strong>Qty:{{ y }}</strong></font></p>
+                  </div>
+
+                   <div class="col-md-2 text-center d-flex justify-content-center align-items-center">
+                    <h1 class="text-muted mb-0 small">{{ q }}</p>
+                  </div>
+                 
+                </div>
+              
+              </div>
+              {% endfor %}
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ {% endblock %} 

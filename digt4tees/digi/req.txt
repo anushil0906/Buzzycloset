@@ -1,0 +1,9 @@
+Django
+pillow
+django_object_actions
+django-shopping-cart
+django-crispy-forms
+django-allauth
+googlemaps
+razorpay
+

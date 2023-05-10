@@ -1,0 +1,23 @@
+<div style="background-color: rgb(228, 228, 228);">
+    <div style="margin: 20px; background-color: #fff;">
+
+Hi {{ user.name }},
+Your order with order id: {{order.order_id}} has been placed successfully.
+
+Your order consists of - 
+{% for i in mylist %}
+Product:{{i.0}} Quantity:{{i.1}} Price:{{i.2}}
+{% endfor %}
+Total:{{order.total}}
+
+Order will reach to you in 30-40 min.
+
+We have attached the invoice for your order with this mail.
+
+Thanks for trusting us and using our services!
+
+Sincerely,
+Sneh Sweets Chat Chaupati
+
+    </div>
+</div>
