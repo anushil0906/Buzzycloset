@@ -1,7 +1,7 @@
 # Buzzycloset
 * Django based e-commerce web application.
 * you can use req.txt file inside digi folder to install requirements.
-* can use the below link if want a big database with more products
+* can use the below link of source code if want a big database with more demo products 
 * https://drive.google.com/drive/folders/1Gxan2vfRL54KJ07VhOPE_RvsNtt1hpOs
 
 
