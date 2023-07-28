@@ -48,7 +48,6 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'cart',
     'ckeditor',
-    'whitenoise.runserver_nostatic',
     'crispy_forms',
     'allauth',
     'allauth.account',
