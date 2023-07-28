@@ -1,0 +1,13 @@
+pillow
+razorpay
+Django==3.2.15
+Django-Admin-Object-Actions==0.1.11
+django-allauth==0.51.0
+django-ckeditor==6.2.0
+django-crispy-forms==1.14.0
+django-crum==0.7.9
+django-js-asset==2.0.0
+django-object-actions==3.1.0
+django-shopping-cart==0.1
+django-storages==1.13.1
+django-ckeditor
