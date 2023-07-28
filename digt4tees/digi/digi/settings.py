@@ -36,7 +36,6 @@ ALLOWED_HOSTS = ['192.168.1.9','127.0.0.1','.vercel.app']
 # Application definition
 
 INSTALLED_APPS = [
-    'facebook_pixel_code',
     'Cart.apps.CartConfig',
     'webpages.apps.WebpagesConfig',
     'accounts.apps.AccountsConfig',
