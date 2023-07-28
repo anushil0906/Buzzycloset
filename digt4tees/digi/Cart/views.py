@@ -19,7 +19,6 @@ from django.template.loader import render_to_string
 from django.core.mail import EmailMessage
 from io import BytesIO
 from django.template.loader import get_template
-from xhtml2pdf import pisa
 import re
 import pickle
 import razorpay
