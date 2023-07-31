@@ -1,3 +1,5 @@
+Live on
+http://qwertyujhvcxaserthjm.pythonanywhere.com/
 # Buzzycloset
 * Django based e-commerce web application.
 * you can use req.txt file inside digi folder to install requirements.
